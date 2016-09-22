@@ -22,6 +22,7 @@ gem 'tzinfo-data', platforms: [:x64_mingw, :mingw, :mswin]
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'
+  gem 'pry-byebug'
   gem 'pry-rails'
 end
 
