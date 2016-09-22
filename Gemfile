@@ -17,6 +17,7 @@ gem 'puma'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'faker'
+gem 'tzinfo-data', platforms: [:x64_mingw, :mingw, :mswin]
 
 group :development, :test do
   gem 'sqlite3'
