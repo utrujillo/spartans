@@ -1,5 +1,6 @@
 module Admin
   class LabelsController < ApplicationController
+    before_action :set_label, only: [:edit, :show, :update, :destroy]
     def index
       @labels = Label.all
     end
@@ -10,7 +11,6 @@ module Admin
 
     def create
       @label = Label.new(label_params)
-
       respond_to do |format|
         if @label.save
           format.html { redirect_to [ "admin", @label ], notice: 'Label creado'}
@@ -21,16 +21,12 @@ module Admin
     end
 
     def edit
-      @label = Label.find(params[:id])
     end
 
     def show
-      @label = Label.find(params[:id])
     end
 
     def update
-      @label =Label.find(params[:id])
-
       respond_to do |format|
         if @label.update(label_params)
         format.html { redirect_to ["admin",@label], notice: 'El label ha sido actualizado'}
@@ -41,10 +37,9 @@ module Admin
     end
 
     def destroy
-      @label = Label.find(params[:id])
       respond_to do |format|
         if @label.destroy
-          format.html { redirect_to admin_label_url, notice: "Elemento eliminado" }
+          format.html { redirect_to admin_labels_url, notice: "Elemento eliminado" }
         else
           format.html { render :index, notice: "Elemento no eliminado" }
         end
@@ -52,8 +47,12 @@ module Admin
     end
 
     private
-    def label_params
-      params.require(:label).permit(:nombre_etiqueta)
-    end
+      def label_params
+        params.require(:label).permit(:nombre_etiqueta)
+      end
+
+      def set_label
+        @label = Label.find(params[:id])
+      end
   end
 end
