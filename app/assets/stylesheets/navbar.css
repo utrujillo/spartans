@@ -1,0 +1,72 @@
+body{
+   font-family:  Arial;
+
+}
+/*ESTILOS GENERALES*/
+#spartan {
+  border-radius: 50%;
+}
+nav ul{
+  position: left;
+  background-position: 10,2,4,,6;
+  list-style: none;
+  padding:0;
+  background: black;
+
+
+}
+
+nav li{
+  line-height: 3rem;
+  position:relative;
+}
+nav li ul{
+  position:absolute;
+}
+nav a{
+  color:white;
+  display: block;
+  padding: 0 2.5em;
+  text-decoration: none;
+  transition: .4s;
+}
+nav a:hover {
+  background: rgba(0,0,0,.5);
+
+}
+
+/*primer nivel*/
+nav > ul{
+  background: black;
+  display:table;
+  width:100%;
+
+}
+nav >ul >li{
+  float:left;
+}
+
+
+/*segundo nivel*/
+nav li li {
+  background: #333;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .4s;
+  width:  200px;
+
+}
+nav li:hover > ul  >li{
+  max-height: 1000px;
+  overflow: visible;
+}
+nav > ul > li > ul {
+
+  top: 100%;
+
+}
+/*tercer nivel*/
+nav ul ul ul {
+  left: 100%;
+  top:0;
+}
