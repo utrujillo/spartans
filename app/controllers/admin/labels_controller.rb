@@ -12,11 +12,11 @@ module Admin
     def create
       @label = Label.new(label_params)
       respond_to do |format|
-        if @label.save
-          format.html { redirect_to [ "admin", @label ], notice: 'Label creado'}
-        else
-          format.html { render :new }
-        end
+      if @label.save
+        format.html { redirect_to [ "admin", @label ], notice: 'Label creado' }
+      else
+        format.html { render :new }
+      end
       end
     end
 
@@ -28,21 +28,21 @@ module Admin
 
     def update
       respond_to do |format|
-        if @label.update(label_params)
-        format.html { redirect_to ["admin",@label], notice: 'El label ha sido actualizado'}
-        else
-          format.html { render :new}
-        end
+      if @label.update(label_params)
+        format.html { redirect_to [ "admin", @label ], notice: 'El label ha sido actualizado' }
+      else
+        format.html { render :new }
+      end
       end
     end
 
     def destroy
       respond_to do |format|
-        if @label.destroy
-          format.html { redirect_to admin_labels_url, notice: "Elemento eliminado" }
-        else
-          format.html { render :index, notice: "Elemento no eliminado" }
-        end
+      if @label.destroy
+        format.html { redirect_to admin_labels_url, notice: "Elemento eliminado" }
+      else
+        format.html { render :index, notice: "Elemento no eliminado" }
+      end
       end
     end
 

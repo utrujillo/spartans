@@ -5,6 +5,7 @@
   </tr>
 </table>
 
+<%= link_to "Editar", edit_admin_label_path(@label) %>
+<%= link_to "Eliminar", admin_label_path(@label), method: :delete, data: { confirm: 'Estas seguro de eliminar el elemento?' }%>
 <%= link_to "Regresar", admin_labels_path %>
-<%= link_to "Editar", admin_labels_path %>
-<%= link_to "Eliminar", admin_labels_path %>
+
