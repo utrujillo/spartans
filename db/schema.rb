@@ -19,4 +19,10 @@ ActiveRecord::Schema.define(version: 20160920173636) do
     t.datetime "updated_at",       null: false
   end
 
+  create_table "labels", force: :cascade do |t|
+    t.string   "nombre_etiqueta"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
 end

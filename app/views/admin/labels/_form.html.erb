@@ -1,0 +1,12 @@
+<%= render 'shared/error_messages', object: @label %>
+
+<%= form_for ["admin",@label] do |f| %>
+  <p>
+    <%= f.label :nombre_etiqueta %>
+    <%= f.text_field :nombre_etiqueta %>
+  </p>
+
+  <p>
+    <%= f.submit nil %>
+  </p>
+<% end %>
