@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    resources :labels
+  end
+
   get 'themes/tipo'
   get 'themes/buttons'
 

@@ -1,0 +1,18 @@
+<%= link_to "Nuevo", new_admin_label_path %>
+<table>
+  <thead>
+    <tr>
+      <th>Titulo </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @labels.each do |item| %>
+      <tr>
+        <td><%= item.nombre_etiqueta %>
+        <td><%= link_to "| Mostar |", admin_label_path(item) %></td>
+        <td><%= link_to "| Editar |", edit_admin_label_path(item) %></td>
+        <td><%= link_to "| Eliminar |", admin_label_path(item), method: :delete, data: { confirm: 'Estas seguro de eliminar el elemento?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
