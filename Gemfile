@@ -18,6 +18,9 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'faker'
 
+gem 'coffee-script-source','1.8.0'
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'

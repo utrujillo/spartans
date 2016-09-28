@@ -1,0 +1,17 @@
+
+<h1> Categorías</h1>
+
+<table>
+  <tbody>
+    <% @categories.each do |item| %>
+      <tr>
+        <td><%= item.nombre_categoria %></td>
+        <td><%= link_to "Nueva categoría", new_admin_category_path %></td>
+        <td><%= link_to "[Mostar]", admin_category_path(item) %> </td>
+        <td><%= link_to "[Editar]", edit_admin_category_path(item) %> </td>
+        <td><%= link_to "[Eliminar]", admin_category_path(item), method: :delete, data: { confirm: '¿Seguro de eliminar la categoría?'} %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

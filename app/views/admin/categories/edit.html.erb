@@ -1,0 +1,8 @@
+<h1>Editar</h1>
+
+<%= render "form" %>
+
+
+<%= link_to "Eliminar", admin_category_path(@category), method: :delete, data: { confirm: '¿Seguro de eliminar la categoría?'}%>
+<%= link_to "Regresar", admin_categories_path %>
+
