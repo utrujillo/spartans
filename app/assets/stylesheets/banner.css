@@ -14,7 +14,7 @@ html,body{
 	color: #fff;
 	margin: 0px;
 	padding-bottom: 0;
-}	
+}
 	.div1, .div2 , .div3{
 		float: left;
 		width: 33%;
@@ -31,10 +31,10 @@ html,body{
 			color: white;
 			line-height: 200px;
 		}
-		.spartan-logo145{ 
+		.spartan-logo145{
 			line-height: 200px;
 			margin: 0% auto;
-			position: relative;	
+			position: relative;
 			left: 25%;
 		}
 			.border-radius50{
