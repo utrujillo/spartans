@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spartans - Admin Interface</title>
+  <%= stylesheet_link_tag    'default', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'default', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <!-- Barra superior - Admin -->
+  <%= render 'layouts/admin/navbar' %>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- Sidebar -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><%= render 'layouts/admin/sidebar' %></div>
+
+      <!-- Informacion Principal -->
+      <div class="col-lg-9 col-md-8 col-sm-6 col-xs-12"><%= yield %></div>
+
+    </div>
+  </div>
+
+  <!-- Pie de pagina - Admin -->
+  <%= render 'layouts/admin/footer' %>
+
+</body>
+</html>
