@@ -8,7 +8,7 @@ module Admin
     end
 
     def new
-      @category =Category.new
+      @category = Category.new
     end
 
     def create
@@ -49,11 +49,9 @@ module Admin
       end
     end
 
-
-
     private
       def category_params
-        params.require(:category).permit(:nombre_categoría)
+        params.require(:category).permit(:nombre_categoria)
       end
       def set_category
         @category =  Category.find(params[:id])
