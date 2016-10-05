@@ -1,14 +1,27 @@
 <%= render 'shared/error_messages', object: @category %>
 
-<%= form_for(['admin', @category]) do |f| %>
+<%= form_for(['admin', @category], html: { class: 'form-horizontal' }) do |f| %>
+  <fieldset>
+    <legend>Registro</legend>
 
-  <p>
-    <%= f.label :nombre_categoria %>
-    <%= f.text_field :nombre_categoria %>
-  </p>
+    <div class="form-group">
+      <%= f.label :nombre_categoria, class: "col-lg-3 col-md-4 col-sm-4 col-xs-6 control-label" %>
+      <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6">
+        <%= f.text_field :nombre_categoria, autofocus: true, :class => 'form-control' %>
+      </div>
+    </div>
 
-  <p>
-    <%= f.submit nil %>
-  </p>
+    <div class="pull-left">
+      <%= link_to "Regresar", admin_categories_path, class: "btn btn-default" %>
+      <% if params[:action] == 'edit' %>
+        <%= link_to "Eliminar", admin_category_path(@category), method: :delete, data: { confirm: '¿Seguro de eliminar la categoría?'}, class: "btn btn-danger" %>
+      <% end %>
+    </div>
+    <div class="pull-right">
+      <%= f.submit nil, class: "btn btn-primary" %>
+    </div>
+    <div class="clearfix"></div>
+
+  </fieldset>
 
 <% end %>
