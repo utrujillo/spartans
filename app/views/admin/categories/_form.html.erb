@@ -1,0 +1,14 @@
+<%= render 'shared/error_messages', object: @category %>
+
+<%= form_for(['admin', @category]) do |f| %>
+
+  <p>
+    <%= f.label :nombre_categoria %>
+    <%= f.text_field :nombre_categoria %>
+  </p>
+
+  <p>
+    <%= f.submit nil %>
+  </p>
+
+<% end %>

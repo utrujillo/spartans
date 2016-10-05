@@ -1,0 +1,12 @@
+<%= render 'shared/notice_messages' %>
+
+<table>
+   <tr>
+     <th>Categorías</th>
+     </td><%= @category.nombre_categoria %></td>
+   </tr>
+ </table>
+
+<%= link_to "Regresar", admin_categories_path %>
+<%= link_to "[Editar]", edit_admin_category_path(@category) %>
+<%= link_to "[Eliminar]", admin_category_path(@category), method: :delete, data: { confirm: '¿Seguro de eliminar la categoría?'} %>
