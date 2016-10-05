@@ -1,0 +1,43 @@
+*::-webkit-input-placeholder { 
+    color: #76BFAC;
+}
+	*::-webkit-input-placeholder:after{ 
+		content: 'Escribiendo texto: focus' ; color: #585858;
+	}
+.icon-square{
+	position: relative;
+	height: 20px;
+	width: 20px;
+	border-radius:0;
+	border-color: #ECF3F1
+	background: #ECF3F1;
+}
+	.icon-inner-square1{
+		position: relative;
+		height: 18px;
+		width: 18px;
+	 	border-radius: 0px;
+	 	background: #7FB2F0;
+	}
+	.icon-inner-square2{
+		position: relative;
+		height: 18px;
+		width: 18px;
+	 	border-radius: 0px;
+	 	background:#F19890;
+	}
+.icon-circle{
+	position: relative;
+	width: 20px;
+	height: 20px;
+	background: #ECF3F1;
+	border-color: #ECF3F1;
+	border-radius: 50%;
+}
+	.icon-inner-circle{
+		height: 18px;
+		position: relative;
+		width: 18px;
+	 	border-radius: 50px;
+	 	background:#7FB2F0;
+	}

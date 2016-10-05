@@ -1,24 +1,35 @@
-<p>
-	<input type="text" name="Buscar"  >
-	<br/>  <br/>
-	<label for="nombre">Nombre: </label>
-	<input type="text" name="nombre" id="nombre">
-	<br/> <br/>
-	<label for="apellido">Apellido: </label>
-	<input type="text" name="apellido" id="apellido">
-	<br/> <br/>
-	<input type="radio" name="Sexo" id="varon" value="Varón">
-	<label for="varon">Varon: </label>
-	<br/> <br/>
-	<input type="radio" name="Sexo" id="mujer" value="Mujer">
-	<label for="mujer">Mujer: </label>
-	<br/> <br/>
-	<select name="select">
-	  <option value="value1">Ingenieria</option> 
-	  <option value="value2" selected>Administracion</option>
-	  <option value="value3">Arquitectura</option>
+<p>&nbsp&nbsp
+	&nbsp&nbsp&nbsp<input type="text" name="name" size="50" placeholder="Buscar.." style=" color: #ECF3F1">
+	<br/>  <br/>&nbsp&nbsp
+	<input type="text" name="nombre" placeholder="Ingresar texto" style=" color : #ECF3F1"> &nbsp
+	<input type="text" name="campotexto0" size="25" height="3" placeholder="Escribiendo texto: focus" style="border-width:1px; box-shadow: 0px 0px 5px 1px; border-style: solid; font-size:11pt; color: #76BFAC;">
+	<br/> <br/>&nbsp&nbsp
+	<label for="apellido"  style="color:#76BFAC;">Nombre Campo: </label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<input type="text" name="campotexto0" size="25" height="3" placeholder="Desactivado" style="border-width:1px; box-shadow: 0px 0px 5px 1px; border-style: solid; font-size:11pt; color: #76BFAC; background:#ECF3F1">
+	<br/> 
+	<div>&nbsp&nbsp	
+		<textarea cols="22" placeholder="Ingresar texto"  rows="3" name="campotexto2" style="overflow:auto; border: 1px solid #ECF3F1 ;"></textarea>
+	</div>&nbsp&nbsp
+	<div class="icon-square">
+		<div class="icon-inner-square1">
+			<p>&nbsp&nbsp&nbsp&nbsp&nbspIngenieria
+				<p class="icon-inner-square2">&nbsp&nbsp&nbsp&nbsp&nbspAdministracion</p>
+				<p class="icon-inner-circle">&nbsp&nbsp&nbsp&nbsp&nbspIngenieria</p>
+			</p>
+		</div>
+	</div>
+	<br/> <br/> <br/> <br/> 
+	<label for="apellido" style="color:#76BFAC;">Nombre Campo: </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<label for="apellido" style="color:#76BFAC;">Materia: </label>
+	<br/>&nbsp&nbsp 
+	<select name="select" style="font-size:11pt; font-color:#228765; border-color:#585858" >
+	<option value="" disabled selected>-- Seleccionar --</option>
+	</select>&nbsp&nbsp&nbsp&nbsp
+	<select name="select" style="font-size:11pt; font-color:#585858 ; border-color:#228765; box-shadow:0px 0px 5px 1px;">
+	  <option value="value1" style="font-color:#585858">Ingenieria</option> 
+	  <option value="value2 " style="font-color:#585858">Administracion</option>
+	  <option value="value3" style="font-color:#585858">Arquitectura</option>
+	  <option value="" disabled selected style="font-color:#585858">-- Seleccionar--</option>
 	</select>
 	<br/> <br/>
-	<input type="submit" value="Enviar">
-	<input type="reset">
 </p>
