@@ -33,7 +33,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string :nombre
       t.string :apellidoPaterno
       t.string :apellidoMaterno
-      t.datetime :fechaNacimiento
+      t.date :fechaNacimiento
 
 
       t.timestamps null: false
