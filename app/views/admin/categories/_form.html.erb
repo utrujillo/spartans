@@ -14,7 +14,7 @@
     <div class="pull-left">
       <%= link_to "Regresar", admin_categories_path, class: "btn btn-default" %>
       <% if params[:action] == 'edit' %>
-        <%= link_to "Eliminar", admin_category_path(@category), method: :delete, data: { confirm: '¿Seguro de eliminar la categoría?'}, class: "btn btn-danger" %>
+        <%= link_to "Eliminar", admin_category_path(@category), method: :delete, data: { confirm: "x" }, class: "btn btn-danger" %>
       <% end %>
     </div>
     <div class="pull-right">

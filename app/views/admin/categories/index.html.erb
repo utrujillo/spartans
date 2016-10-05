@@ -22,7 +22,7 @@
             <td class="text-center">
               <%= link_to "Mostar", admin_category_path(item), class: "btn btn-xs btn-info" %>
               <%= link_to "Editar", edit_admin_category_path(item), class: "btn btn-xs btn-success" %>
-              <%= link_to "Eliminar", admin_category_path(item), method: :delete, data: { confirm: '¿Seguro de eliminar la categoría?'}, class: "btn btn-xs btn-danger" %>
+              <%= link_to "Eliminar", admin_category_path(item), method: :delete, data: { confirm: 'x'}, class: "btn btn-xs btn-danger" %>
             </td>
            </tr>
          <% end %>
