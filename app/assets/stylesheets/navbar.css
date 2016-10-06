@@ -1,7 +1,8 @@
 /******************************************************************************
                               Estructure .css Navbar by RannFerii
 ******************************************************************************/
-.navbar{
+
+.blog-navbar .navbar{
   background: #000;
   color:#fff;
   max-height: 80px;
@@ -50,8 +51,8 @@
  }
 
  .button{
-   background-color: transparent; /* Green */
-   border: none;
+    background-color: transparent; /* Green */
+    border: none;
     float: left;
     color: white;
     padding: 16px;
@@ -79,12 +80,12 @@
 
   /* Estilos dropdown*/
 
-  .dropdown {
+  .blog-navbar .dropdown {
     position: relative;
     display: inline-block;
   }
 
-    .dropdown-content {
+    .blog-navbar .dropdown-content {
       display: none;
       position: absolute;
       background-color: #f9f9f9;
@@ -92,25 +93,25 @@
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     }
 
-    .dropdown:hover .dropdown-content {
-        display: block;
-        z-index: 9999;
-        border: none;
-        text-decoration: none;
+    .blog-navbar .dropdown:hover .dropdown-content {
+      display: block;
+      z-index: 9999;
+      border: none;
+      text-decoration: none;
     }
 
-    .dropdown:hover .dropbtn {
+    .blog-navbar .dropdown:hover .dropbtn {
       background-color: #585858;
     }
 
-      .dropdown-content a {
+      .blog-navbar .dropdown-content a {
         color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
       }
 
-      .dropdown-content a:hover { background-color: #7FB2F0 }
+      .blog-navbar .dropdown-content a:hover { background-color: #7FB2F0 }
 
  /******************************************************************************
                             Estilos Generales
@@ -120,13 +121,13 @@
 
     /*Padres e hijos*/
 
-    .nav{
+    .blog-navbar .nav{
       list-style: none;
       margin: 0;padding-top: 20px;
       margin-right: 5px;
     }
 
-    .nav li{
+    .blog-navbar .nav li{
       margin-left: 15px;
       display: inline-block;
       padding-right: 24px;
