@@ -1,41 +1,41 @@
- /*Comiezan los tipos de botones*/
-  /*Comieza .estilo_btn1 */ 
+/*Comiezan los tipos de botones*/
+/*Comieza .estilo_btn1 BOTON NORMAL */
 
-		.estilo_btn1{
-		background: #ADD5F7;
-		border-radius:5px 5px 5px 5px;		/* tamaño de bordes*/
-		border: 1px solid #ADD5F7;
-		padding: 13px 77px;   	/*Manipular el espacio interno orden manesillas del reloj*/
-		 }
-		.estilo_btn1:active{
-		border:1p solid #16193B ;
-		-webkit-box-shadow:mff buff blur color;
-		box-shadow:
-			}
- /*Comiensa .estilo_btn2*/
+.estilo_btn1{    					
+	background:#ADD5F7;
+	border-radius:5px 5px 5px 5px;		/* tamaño de bordes*/
+	border:1px solid #ADD5F7;
+	padding:10px 10px;  /*Manipular el espacio interno orden manesillas del reloj*/
+}
 
-		.estilo_btn2{
-		background: #4E7AC7;
-		border-radius:5px 5px 5px 5px;		/* tamaño de bordes*/
-		border: 1px solid #7FB2F0;
-		padding: 13px 77px;   	/*Manipular el espacio interno orden manesillas del reloj*/
-			}
-		.estilo_btn2:hover{
-		background: #ADD5F7;
-		font-weight: bold;
-		}
-		.estilo_btn2:active{
-		border:1p solid #16193B ;
-		-webkit-box-shadow:mff buff blur color;
-		box-shadow: 
-		}
+.estilo_btn2{						/*BOTON HOVER*/
+	
+	background:#4E7AC7;
+	border-radius:5px 5px 5px 5px;		/* tamaño de bordes*/
+	border:1px solid#ADD5F7;
+	padding:10px 10px;  /*Manipular el espacio interno orden manesillas del reloj*/
+}
 
-		/*Comienza estilo_boton3*/
-		.estilo_btn3{
-		background: #ECF3F1;
-		border-radius:5px 5px 5px 5px;		/* tamaño de bordes*/
-		border: 1px solid #ECF3F1;
-		padding: 13px 77px;   	/*Manipular el espacio interno orden manesillas del reloj*/
-			}
-		
-			
+.estilo_btn2:hover{
+	background:#ADD5F7;			
+	border:1px solid#ADD5F7;
+}
+
+.estilo_btn3{                          /*BOTON ACTIVE*/
+	background:#4E7AC7;
+	border-radius:5px 5px 5px 5px;		/* tamaño de bordes*/
+	border:1px solid ;
+	padding:10px 10px; 
+}
+
+.estilo_btn3:active{
+	background:#7FB2F0;
+	box-shadow:0.5px 0.5px 0.5px 0.5px;
+}
+
+.estilo_btn4{   						 /*BOTON DESACTIVADO*/
+	background:#ECF3F1;
+	border-radius:5px 5px 5px 5px;		/* tamaño de bordes*/
+	border:1px solid ;
+	padding:10px 10px; 
+}
