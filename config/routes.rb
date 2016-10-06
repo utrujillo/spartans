@@ -3,9 +3,9 @@ Rails.application.routes.draw do
     resources :categories
     resources :labels
     resources :home, only: [:index]
-    root 'home#index'
   end
   devise_for :users
   get 'themes/tipo'
   get 'themes/buttons'
+  root 'home#index'
 end
