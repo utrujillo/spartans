@@ -13,21 +13,31 @@
         <!--lado derecho menu y search-->
         <div class="col-lg-9 col-md-9 col-sm-6 col-xs-12">
           <div class="estructure">
-            <div class="row">
+           <div class="row">
             <div class="col-lg-8 col-md-9 col-sm-6 col-xs-12">
-              <div class="menu-gral\">
-                <ul class="nav">
-                  <li>Inicio</li>
-                  <li>Contacto</li>
-                  <li>Categorias</li>
-                </ul>
+              <div class="menu-gral">
+              <div class="Margen">
+              <button type="submit" class="button button1">Inicio</button>
+              <button type="submit" class="button button2">Contacto</button>
+              <div class="dropdown">
+                <button type="submit" class="dropbtn">Categorias</button>
+                    <div class="dropdown-content">
+                      <a href="#">HTML</a>
+                      <a href="#">CSS</a>
+                      <a href="#">FRONT-END</a>
+                      <a href="#">BACK-END</a>
+                    </div>
+                </div>
               </div>
-             <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
              <!--Search (buscador input)-->
-             <input type="text" class="input-search">
-             <div class="tittle-blog-search">Buscar</div>
+            <div class="search">
+              <input type="text" placeholder="Buscar...">
+                <button type='submit'>
+                  <i class='fa fa-stick'></i>
+                </button>
             </div>
            </div>
         </div>
