@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
-  namespace :admin do
-  get 'home/index'
-  end
 
   namespace :admin do
+    resources :categories
     resources :labels
+    resources :home, only: [:index]
   end
 
   get 'themes/tipo'
@@ -13,3 +12,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
 end
+
+
+
+
