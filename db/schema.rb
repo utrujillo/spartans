@@ -11,12 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160915060007) do
+ActiveRecord::Schema.define(version: 20161004203132) do
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "nombre_categoria"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
 
   create_table "labels", force: :cascade do |t|
     t.string   "nombre_etiqueta"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.string   "titulo"
+    t.string   "contenido"
+    t.integer  "veces_leida"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end

@@ -2,7 +2,7 @@
 <table>
   <thead>
     <tr>
-      <th>Titulo </th>
+      <th> Posts </th>
     </tr>
   </thead>
   <tbody>
@@ -11,7 +11,7 @@
         <td><%= item.nombre_etiqueta %>
         <td><%= link_to "| Mostar |", admin_label_path(item) %></td>
         <td><%= link_to "| Editar |", edit_admin_label_path(item) %></td>
-        <td><%= link_to "| Eliminar |", admin_label_path(item), method: :delete, data: { confirm: 'Estas seguro de eliminar el elemento?' } %></td>
+        <td><%= link_to "| Eliminar |", admin_label_path(item), method: :delete, data: { confirm: '¿Seguro de eliminar el elemento?' } %></td>
       </tr>
     <% end %>
   </tbody>

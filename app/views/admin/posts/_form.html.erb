@@ -1,0 +1,20 @@
+<%= render 'shared/error_messages', object: @post %>
+
+<%= form_for ["admin",@post] do |f| %>
+  <p>
+    <%= f.label :titulo %>
+    <%= f.text_field :titulo %>
+  </p>
+
+  <p>
+    <%= f.label :contenido %>
+    <%= f.text_field :contenido %>
+  </p>
+
+  <p>
+    <%= f.label :veces_leida %>
+  </p>
+  <p>
+    <%= f.submit nil %>
+  </p>
+<% end %>
