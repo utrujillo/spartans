@@ -13,7 +13,7 @@ module Admin
       @post = Post.new(post_params)
       @veces_leida = @post.veces_leida
       respond_to do |format|
-      @post.veces_leida =  +1
+      @post.veces_leida = 0
         if @post.save
           format.html { redirect_to [ "admin", @post ], notice: 'Se ha creado el post' }
         else
