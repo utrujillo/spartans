@@ -1,0 +1,174 @@
+.hyperlink{
+  font-size: 30px;
+  font-style: Arial;
+    }
+
+  /*Estilo de tabla*/
+    .table{
+      border: 2px;
+    }
+
+  /*Estilos Hover*/
+
+    .link a {
+        text-align:center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        background-color: #CCCCCC;
+        text-decoration: none;
+        color: #000000;
+      }
+
+    .link1 a:hover {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        background-color: #000000;
+        text-decoration: none;
+        color: #FF0000;
+      }
+
+    .link2 a{
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 14px;
+        font-weight: 900;
+        text-decoration: none;
+        color: #666666;
+        border: 1px solid #FFFFFF;
+      }
+    .link2 a:hover {
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 14px;
+        font-weight: 900;
+        background-color: #FFCCFF;
+        text-decoration: none;
+        color: #FF0000;
+        border: 1px solid #FF0000;
+      }
+
+    .link3 a {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 900;
+        background-color: #EAF3FB;
+        text-decoration: none;
+        color: #000000;
+        border-top-width: 3px;
+        border-right-width: 3px;
+        border-bottom-width: 3px;
+        border-left-width: 3px;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+        border-top-color: #999999;
+        border-right-color: #E9E9E9;
+        border-bottom-color: #E9E9E9;
+        border-left-color: #999999;
+      }
+    .link3 a:hover {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 900;
+        background-color: #00CCFF;
+        text-decoration: none;
+        color: #FFFFFF;
+        border-top-width: 3px;
+        border-right-width: 3px;
+        border-bottom-width: 3px;
+        border-left-width: 3px;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+        border-top-color: #E9E9E9;
+        border-right-color: #666666;
+        border-bottom-color: #666666;
+        border-left-color: #E9E9E9;
+      }
+
+    .link4 a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: 200;
+        background-color: #CCCCCC;
+        text-decoration: none;
+        color: #383838;
+        background-image: url(ima/dos.png);
+        background-repeat:  repeat-x;
+        background-position: left top;
+        padding: 5px;
+        border-top-width: 14px;
+        border-top-style: ridge;
+        border-top-color: #FFCC00;
+        border-right-color: #A48300;
+        border-bottom-color: #A48300;
+        border-left-color: #FFCC00;
+        border-right-width: 14px;
+        border-bottom-width: 14px;
+        border-left-width: 14px;
+        border-right-style: ridge;
+        border-bottom-style: ridge;
+        border-left-style: ridge;
+      }
+    .link4 a:hover {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 900;
+        background-color: #CCCCCC;
+        text-decoration: none;
+        color: #FFFFFF;
+        background-image: url(ima/uno.png);
+        background-repeat:  repeat-x;
+        background-position: left top;
+        padding: 5px;
+        border-top-width: 14px;
+        border-top-style: ridge;
+        border-top-color: #A48300;
+        border-right-color: #FFCC00;
+        border-bottom-color: #FFCC00;
+        border-left-color: #A48300;
+        border-right-width: 14px;
+        border-bottom-width: 14px;
+        border-left-width: 14px;
+        border-right-style: ridge;
+        border-bottom-style: ridge;
+        border-left-style: ridge;
+      }
+      /* Estilos normales /active /visites*/
+
+    .link1n a{
+        color: #f90;
+        background: none;
+        font: bold 1em/1.7em "Trebuchet MS", Arial, Helvetica, serif;
+
+      }
+    .link1n a:active{
+        color: green;
+        text-decoration: overline;
+
+      }
+
+    .link2n a{
+        color: black;
+        background: none;
+        font:arial;
+        text-decoration: none;
+      }
+
+    .link3n a {
+        font-family: Trebuchet MS;
+        font-size: 12px;
+        color: gray;
+      }
+
+    .link3n a:visited {
+        text-decoration: line-through;
+        color: yellow;
+      }
+
+    .link3n a:active {
+        text-decoration: underline;
+        color: purple;
+      }
+
+
