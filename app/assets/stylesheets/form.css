@@ -11,28 +11,20 @@
 		border-style: solid; 
 	}
 		.color-input-shadow-des{
-		color:#76BFAC; ;
-		border-width:1px;
-	 	box-shadow: 0px 0px 5px 1px;
-		border-style: solid; 
-		background: #ECF3F1;
+			color:#76BFAC; ;
+			border-width:1px;
+		 	box-shadow: 0px 0px 5px 1px;
+			border-style: solid; 
+			background: #ECF3F1;
 		}
+	.color-select{
+		font-size:11pt;
+		font-color:#228765;
+		 border-color:#585858;
+	}
 .color-label{
 	color: #76BFAC;
 }
-.color-select{
-	font-size:11pt;
-	 font-color:#228765;
-	  border-color:#585858;
-}
 .table-form td,th{
 	padding: 10px;
-}
-.font-form{
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-	font-size: 14px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 20px;
 }
