@@ -1,49 +1,90 @@
-<p class="font-form">
-	<table width="450" border="0" class="table-form">
-		<tr>
-			<td colspan="2"><input type="search" name="name" size="50" placeholder="Buscar.." class="color-input">
-			</td>
-		</tr>
-		<tr>
-			<th><input type="text" name="text1" placeholder="Ingresar texto" class="color-input"></th>
-			<th><input type="text" name="text2" placeholder="Escribiendo texto:focus" class="color-input-shadow">
-			</th>
-		</tr>
-		<tr>
-			<th><label for="apellido" class="color-label">Nombre Campo: </label></th>
-			<th><input type="text" name="campotexto0" placeholder="Desactivado" class="color-input-shadow-des">
-			</th>
-		</tr>
-		<tr>
-			<td rowspan="2"><textarea placeholder="Ingresar Texto" class="color-input"></textarea></td>
-			<td>
-				<input id="option" type="checkbox" name="field" value="option">
-				<label for="option">Ingenieria</label>				
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<input type="radio" name="gender" value="female"> Administracion
-			</td>
-		</tr>
-		<tr>
-			<td><label for="apellido" class="color-label"> Nombre Campo: </label></td>
-			<td><label for="apellido" class="color-label"> Materia: </label></td>
-		</tr>
-		<tr>
-			<td>
-				<select name="select" class="color-select">
-					<option value="" disabled selected>-- Seleccionar --</option>
-				</select>
-			</td>	
-			<td>
-				<select name="select" class="color-input-shadow">
-					<option value="value1" >Ingenieria</option> 
-					<option value="value2 " >Administracion</option>
-					<option value="value3" >Arquitectura</option>
-					<option value="" disabled selected >-- Seleccionar--</option>
-				</select>
-			</td>
-		</tr>
-	</table>
-</p>
+<div class="container">
+	<div class="row">
+
+		<!-- Parte Derecha -->
+		<div class="col-md-6">
+			<h4>Formulario Horizontal</h4>
+			<form action="#" class="form-horizontal custom-form">
+
+				<div class="form-group">
+					<div class="col-md-12">
+						<div class="search-white">
+			        <label><i class="fa fa-search"></i></label>
+			        <input class="form-control" placeholder="Buscar...">
+			      </div>
+					</div>
+				</div>
+
+	      <div class="form-group">
+	      	<div class="col-md-6"><input type="text" class="form-control" placeholder="Ingresar Texto"></div>
+	      	<div class="col-md-6"><input type="text" class="form-control" disabled="disabled" value="Desactivado"></div>
+	      </div>
+
+	      <div class="form-group">
+	      	<div class="col-md-12">
+	      		<select class="form-control">
+	      			<option value="0">- Seleccionar -</option>
+	      			<option value="1">Ingenieria de Software</option>
+	      			<option value="2">Computo de alto desempeño</option>
+	      		</select>
+	      	</div>
+	      </div>
+
+	      <div class="from-group">
+      		<div class="checkbox-inline">
+					  <label><input type="checkbox" value="">Ingeniería</label>
+					</div>
+					<div class="checkbox-inline">
+					  <label><input type="checkbox">Computo alto desempeño</label>
+					</div>
+	      </div>
+
+	      <div class="form-group">
+	      	<div class="col-md-12">
+
+	      		<div class="radio-inline">
+						  <label><input type="radio" name="optionsRadios" checked> Ingeniería</label>
+						</div>
+						<div class="radio-inline">
+						  <label><input type="radio" name="optionsRadios">Computo alto desempeño</label>
+						</div>
+
+	      	</div>
+	      </div>
+
+			</form>
+		</div>
+
+		<!-- Parte Izquierda -->
+		<div class="col-md-6">
+			<h4>Formulario Vertical</h4>
+			<form action="#" class="custom-form">
+
+				<div class="form-group">
+			    <label>Nombre del campo:</label>
+			    <input type="text" class="form-control" placeholder="Ingresar Texto">
+			  </div>
+
+			  <div class="form-group">
+			    <label>Nombre del campo:</label>
+			    <textarea rows="5" class="form-control"></textarea>
+			  </div>
+
+			  <div class="checkbox">
+				  <label><input type="checkbox" value="">Ingeniería</label>
+				</div>
+				<div class="checkbox">
+				  <label><input type="checkbox">Computo alto desempeño</label>
+				</div>
+
+				<div class="radio">
+				  <label><input type="radio" name="optionsRadios" checked> Ingeniería</label>
+				</div>
+				<div class="radio">
+				  <label><input type="radio" name="optionsRadios">Computo alto desempeño</label>
+				</div>
+
+			</form>
+		</div>
+	</div>
+</div>
