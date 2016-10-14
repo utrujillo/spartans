@@ -13,17 +13,27 @@
   #spartan-radio{ border-radius: 50%; }
 
   .search{
-    padding-top: 15px;
-    padding-right: 10px;
-    padding-left: 10px;
-    color: black;
+    position: relative;
+    padding: 15px 10px 0 10px;
   }
+    .search label{
+      position: absolute;
+      right: 15px;
+      top: 23px;
+    }
 
-  /*icono negro del fa fa-search*/
-  .fa-stick:before {
-    content: "\f002";
-    color:black;
-  }
+    .search input{
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid rgba(255,255,255,.3);
+      border-radius: 0;
+      color: #fff;
+      font-weight: 100;
+    }
+
+    .seach input:active{
+      border-top: 1px solid rgba(255,255,255,.3);
+    }
 
   /*Clases de titulos*/
 
@@ -117,7 +127,10 @@
                             Estilos Generales
  ******************************************************************************/
 
-  .menu-gral{float: right;}
+  .menu-gral{
+    float: right;
+    font-weight: 100;
+  }
 
     /*Padres e hijos*/
 
