@@ -13,6 +13,12 @@
 
 ActiveRecord::Schema.define(version: 20161004191919) do
 
+  create_table "categories", force: :cascade do |t|
+    t.string   "nombre_categoria"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
   create_table "labels", force: :cascade do |t|
     t.string   "nombre_etiqueta"
     t.datetime "created_at",      null: false
@@ -36,12 +42,6 @@ ActiveRecord::Schema.define(version: 20161004191919) do
     t.date     "fechaNacimiento"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-  end
-
-  create_table "categories", force: :cascade do |t|
-    t.string   "nombre_categoria"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
