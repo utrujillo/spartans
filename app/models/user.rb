@@ -5,4 +5,8 @@ class User < ActiveRecord::Base
   validates :nombre, presence: true
   validates :apellidoPaterno, presence: true
   validates :apellidoMaterno, presence: true
+
+  def nombre_usuario
+    "#{nombre} #{apellidoPaterno} #{apellidoMaterno}"
+  end
 end
