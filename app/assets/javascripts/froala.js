@@ -1,3 +1,5 @@
 $(function(){
-  $('.froala-editor').froalaEditor()
+  $('.froala-editor').froalaEditor({
+    toolbarButtons: ['bold','italic','fontSize','color','quote','orderedList','formatOL','insertLink','insertImage','html']
+  })
 });
