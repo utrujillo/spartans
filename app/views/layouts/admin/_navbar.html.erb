@@ -14,8 +14,8 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a>Nombre del Usuario Logueado</a></li>
-        <li><a href="#"><i class="fa fa-lock"></i>&nbsp; Cerrar Sesión</a></li>
+        <li><a><%=  current_user.nombre_usuario %></a></li>
+        <li><%= link_to '<i class="fa fa-lock"></i>&nbsp;Cerrar Sesión'.html_safe, destroy_user_session_path, method: :delete %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
