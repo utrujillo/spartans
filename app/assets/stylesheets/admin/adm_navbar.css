@@ -1,0 +1,6 @@
+.admin .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.admin .navbar-brand > img { padding: 7px 14px; }
