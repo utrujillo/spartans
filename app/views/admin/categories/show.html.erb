@@ -1,0 +1,18 @@
+<p><%= link_to "Nueva categoría", new_admin_category_path, class: "btn btn-primary" %></p>
+
+<%= render 'shared/notice_messages' %>
+
+<table class="table">
+  <tr>
+   <th>Categoría</th>
+   <td><%= @category.nombre_categoria %></td>
+  </tr>
+ </table>
+
+<div class="pull-left">
+  <%= link_to "Regresar", admin_categories_path, class: "btn btn-default" %>
+  <%= link_to "Editar", edit_admin_category_path(@category), class: "btn btn-success" %>
+  <%= link_to "Eliminar", admin_category_path(@category), method: :delete, data: { confirm: '¿Seguro de eliminar la categoría?'}, class: "btn btn-danger" %>
+</div>
+<div class="clearfix"></div>
+

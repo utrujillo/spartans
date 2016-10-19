@@ -6,7 +6,7 @@
   <%= javascript_include_tag 'default', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="admin-interface">
 
   <!-- Barra superior - Admin -->
   <%= render 'layouts/admin/navbar' %>
@@ -18,7 +18,21 @@
       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><%= render 'layouts/admin/sidebar' %></div>
 
       <!-- Informacion Principal -->
-      <div class="col-lg-9 col-md-8 col-sm-6 col-xs-12"><%= yield %></div>
+      <div class="col-lg-9 col-md-8 col-sm-6 col-xs-12">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <% result = params[:controller].split(/\//) %>
+              <span class="pull-left"><%= result[1] %></span>
+              <span class="pull-right">#<%= params[:action] if params[:action] != 'index' %></span>
+              <div class="clearfix"></div>
+            </h3>
+          </div>
+          <div class="panel-body">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>

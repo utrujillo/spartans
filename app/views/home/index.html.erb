@@ -1,22 +1,23 @@
-<h1>Probando Grid System <i class="fa fa-comment"></i>&nbsp;<i class="fa fa-search"></i></h1>
+<!-- Container-fluid -->
 <div class="container">
+
   <div class="row">
-    <div class="col-lg-12"><h3>Container <i class="fa fa-refresh fa-spin fa-fw"></i></h3></div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><%= render 'breadcumbs' %></div>
   </div>
+
   <div class="row">
-    <div class="col-lg-4 col-lg-md-4 col-lg-sm-12 col-xs-12">Caja 1</div>
-    <div class="col-lg-4 col-lg-md-4 col-lg-sm-12 col-xs-12">Caja 2</div>
-    <div class="col-lg-4 col-lg-md-4 col-lg-sm-12 col-xs-12">Caja 3</div>
+
+    <!-- Posts -->
+    <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
+      <%= render 'posts' %>
+    </div>
+
+    <!-- Card -->
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+      <%= render 'card' %>
+    </div>
   </div>
+
 </div>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg-12"><h3>Container-fluid</h3></div>
-  </div>
-  <div class="row">
-    <div class="col-lg-4 col-lg-md-4 col-lg-sm-12 col-xs-12">Caja 1</div>
-    <div class="col-lg-4 col-lg-md-4 col-lg-sm-12 col-xs-12">Caja 2</div>
-    <div class="col-lg-4 col-lg-md-4 col-lg-sm-12 col-xs-12">Caja 3</div>
-  </div>
-</div>
+

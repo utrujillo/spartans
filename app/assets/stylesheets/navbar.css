@@ -1,19 +1,28 @@
 /******************************************************************************
                               Estructure .css Navbar by RannFerii
 ******************************************************************************/
+<<<<<<< HEAD
 .navbar{
 
+=======
+
+.blog-navbar .navbar{
+>>>>>>> master
   background: #000;
   color:#fff;
   max-height: 80px;
   margin-bottom: 1px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
  }
 
    /*Etiqueta de la imagen*/
   #spartan-radio{ border-radius: 50%; }
 
   .search{
+<<<<<<< HEAD
 
     padding-top: 15px;
     padding-right: 10px;
@@ -31,16 +40,46 @@
   }
 
     /*Clases de titulos*/
+=======
+    position: relative;
+    padding: 15px 10px 0 10px;
+  }
+    .search label{
+      position: absolute;
+      right: 15px;
+      top: 23px;
+    }
+
+    .search input{
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid rgba(255,255,255,.3);
+      border-radius: 0;
+      color: #fff;
+      font-weight: 100;
+    }
+
+    .seach input:active{
+      border-top: 1px solid rgba(255,255,255,.3);
+    }
+
+  /*Clases de titulos*/
+>>>>>>> master
 
   .logo, .tittle-blog { float: left; }
 
   .logo, .estructure { padding: 10px; }
 
   .tittle-blog{
+<<<<<<< HEAD
 
     font-size: 1.9em;
     padding-top: 20px;
 
+=======
+    font-size: 1.9em;
+    padding-top: 20px;
+>>>>>>> master
   }
 
   /*Botones*/
@@ -55,11 +94,19 @@
     pointer-events: none;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
+<<<<<<< HEAD
 
  }
  .button{
    background-color: transparent; /* Green */
    border: none;
+=======
+ }
+
+ .button{
+    background-color: transparent; /* Green */
+    border: none;
+>>>>>>> master
     float: left;
     color: white;
     padding: 16px;
@@ -67,6 +114,7 @@
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
+<<<<<<< HEAD
 
  }
 
@@ -107,10 +155,58 @@
 
      .dropdown-content a {
 
+=======
+ }
+
+  .button1, .button2 {
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
+
+  .button1:hover {
+    background-color: #585858;
+    color: black;
+  }
+
+  .button2:hover {
+    background-color: #585858;
+    color: black;
+  }
+
+  /* Estilos dropdown*/
+
+  .blog-navbar .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+    .blog-navbar .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .blog-navbar .dropdown:hover .dropdown-content {
+      display: block;
+      z-index: 9999;
+      border: none;
+      text-decoration: none;
+    }
+
+    .blog-navbar .dropdown:hover .dropbtn {
+      background-color: #585858;
+    }
+
+      .blog-navbar .dropdown-content a {
+>>>>>>> master
         color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
+<<<<<<< HEAD
 
       }
 
@@ -143,24 +239,44 @@
       background-color: #585858;
       color: black;
   }
+=======
+      }
+
+      .blog-navbar .dropdown-content a:hover { background-color: #7FB2F0 }
+>>>>>>> master
 
  /******************************************************************************
                             Estilos Generales
  ******************************************************************************/
 
+<<<<<<< HEAD
   .menu-gral{float: right;}
 
        /*Padres e hijos*/
 
     .nav{
 
+=======
+  .menu-gral{
+    float: right;
+    font-weight: 100;
+  }
+
+    /*Padres e hijos*/
+
+    .blog-navbar .nav{
+>>>>>>> master
       list-style: none;
       margin: 0;padding-top: 20px;
       margin-right: 5px;
     }
 
+<<<<<<< HEAD
     .nav li{
 
+=======
+    .blog-navbar .nav li{
+>>>>>>> master
       margin-left: 15px;
       display: inline-block;
       padding-right: 24px;
