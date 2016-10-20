@@ -7,11 +7,8 @@ Rails.application.routes.draw do
   devise_for :users
   get 'themes/tipo'
   get 'themes/buttons'
-<<<<<<< HEAD
-  get 'themes/hyperlink'
-=======
   get 'themes/form'
->>>>>>> master
+  get 'themes/hyperlink'
 
   # You can have the root of your site routed with "root"
   root 'home#index'
