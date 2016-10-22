@@ -1,119 +1,110 @@
 /******************************************************************************
                               Estructure .css Navbar by RannFerii
 ******************************************************************************/
-@font-face {
-  font-family: "icons-social";
-  }
-
-* {
-  padding: 0;
-  margin: 0 auto;
-  text-align: center;
-  font-family: 'avenir';
-
-   }
-
 #content {
-  width: 600px;
-  height: 700px;
+  width: 420px;
+  height: 570px;
   background: #FCFCFC;
   border-radius: 15px;
-  box-shadow: 0px 0px 8px black;
-  margin-top: 80px;
+  box-shadow: 0px 0px 8px #4E7AC7;
+  margin-top: -10px;
 
 }
 
-#head {
-  width: 100%;
-  height: 275px;
-
-  background: #E74C3C;
-  background-position: right bottom;
-  background-size: cover;
-
-  border-radius: 15px 15px 0 0;
-}
-.titulo{
-  font-size: 40px;
-  color:red;
-}
-
-.hiper-container {
-
-  padding-top: 200px;
-  color:black;
-
-}
-
-.label-container
-
-{
-  font-size: 20;
-  text-align : justify;
-  padding-top: 10px;
-  margin-left: 50;
-  margin-right: 50;
-}
+  #head {
+    width: 100%;
+    height: 200px;
+    background: #E74C3C;
+    background-position: right bottom;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
 
 
-#profile_pic {
-  width: 300px;
-  height: 300px;
-  margin-left: 145px;
-  margin-top: 100px;
-  background-image:url("stormtruper.jpg");
-  background-position: left top;
-  background-size: cover;
-  border-radius: 255px;
-  border: 5px solid white;
-  box-shadow: 0px 0px 8px black;
-  position: absolute;
-}
-#social-network {
-  padding-top: -50px;
-}
+  .hiper-container {
+    padding-top: 135px;
+    color:black;
+    margin-left: 95px;
+    padding-left: 10px;
+    font-size: 20px;
+
+  }
 
 
-#content h1 {
-  position: absolute;
-  width: 400px;
-  margin-left: 100px;
-  margin-top: 417px;
-  font-size: 40px;
-  color:#4E7AC7;
+  #profile_pic {
+    width: 216px;
+    height: 216px;
+    margin-left: 110px;
+    margin-top: 80px;
+    background-image:url("/images/stormtruper.jpg");
+    background-position: left top;
+    background-size: cover;
+    border-radius: 255px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 8px black;
+    position: absolute;
+  }
 
-}
+  .social-network {
+    padding-left: 10px;
+    margin-left: 10px;
 
-#content p {
-  font-family: "icons-social";
-  background-image:url("facebook_logo.png");
-  background-position: left top;
-  background-size: cover;
-  color: #C0392B;
-  font-size: 50px;
-  padding-top: -100px;
-  margin-top: -100px;
-  border-top: 10px;
-}
+  }
 
-#content ul {
-  margin-top: 150px;
-}
 
-#content ul li {
-  display: inline-block;
-  margin: 0px 40px;
-  -webkit-transition: all 0.5s;
-}
+  #content h1 {
+    position: absolute;
+    width: 0px;
+    margin-left: 147px;
+    margin-top: 300px;
+    font-size: 40px;
+    color:#4E7AC7;
 
-#content ul li:hover {
-  cursor: pointer;
-  -webkit-transform: scale(1.2);
-  -webkit-transition: all 0.5s;
-}
+  }
 
-#content ul li:hover > p {
-  text-shadow: 0px 0px 5px #c7acac;
-  color: black;
-  -webkit-transition: all 0.5s;
-}
+
+  #content p {
+    font-family: "icons-social";
+    background-position: left top;
+    background-size: cover;
+    color: #C0392B;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-left: -43px;
+    padding-left: 60px;
+  }
+
+  #content h2 {
+    background-position: left top;
+    background-size: cover;
+    color: #C0392B;
+    font-size: 15px;
+   margin-right: 10px;
+     margin-left: -58px;
+    padding-left: 0px;
+  }
+
+
+  #content ul {
+    margin-top: -10px;
+  }
+
+  #content ul li {
+    margin-left: 50px;
+    margin-left: 10px;
+    display: inline-block;
+    margin: 0px 40px;
+    -webkit-transition: all 0.5s;
+  }
+
+  #content ul li:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -webkit-transition: all 0.5s;
+  }
+
+  #content ul li:hover > p {
+    text-shadow: 0px 0px 5px #c7acac;
+    color: black;
+    -webkit-transition: all 0.5s;
+  }
