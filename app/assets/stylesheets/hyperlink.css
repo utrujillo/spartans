@@ -1,3 +1,6 @@
+/********************************************************************
+                            Generales
+********************************************************************/
 *,
 *:after,
 *::before {
@@ -6,32 +9,33 @@
     box-sizing: border-box;
 }
 
-body {
-  font-family: 'Raleway', sans-serif;
+.bg-blue::before, .bg-blue::after { background: #35478C; }
+.bg-green::before, .bg-green::after { background: #77A668; }
+.bg-gray::before, .bg-gray::after { background: #68A797; }
+.bg-pink::before, .bg-pink::after { background: #7F3357; }
+.bg-red::before, .bg-red::after { background: #F19890; }
 
-}
-
-  nav a {
+  a[class^="cl-effect"] {
     position: relative;
     display: inline-block;
-    margin: 15px 25px;
     outline: none;
     text-decoration: none;
     letter-spacing: 1px;
-    font-weight: 400;
+    font-weight: 500;
     text-shadow: 0 0 1px rgba(255,255,255,0.3);
-    font-size: .7em;
+    font-size: .8em;
+    line-height: 1.3em;
   }
 
-  nav a:hover,
-  nav a:focus {
+  a[class^="cl-effect"]:hover,
+  a[class^="cl-effect"]:focus {
     outline: none;
   }
-
-    .cl-effect-1 a{ color:#16193B; }
-    /* Effect 1: Brackets */
-    .cl-effect-1 a::before,
-    .cl-effect-1 a::after {
+    /********************************************************************
+                                Efecto 1
+     ********************************************************************/
+    .cl-effect-1::before,
+    .cl-effect-1::after {
       display: inline-block;
       opacity: 0;
       -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
@@ -39,8 +43,7 @@ body {
       transition: transform 0.3s, opacity 0.2s;
     }
 
-    .cl-effect-1 a::before {
-
+    .cl-effect-1::before {
       margin-right: 10px;
       content: '[';
       -webkit-transform: translateX(20px);
@@ -48,8 +51,7 @@ body {
       transform: translateX(20px);
     }
 
-    .cl-effect-1 a::after {
-
+    .cl-effect-1::after {
       margin-left: 10px;
       content: ']';
       -webkit-transform: translateX(-20px);
@@ -57,26 +59,25 @@ body {
       transform: translateX(-20px);
     }
 
-    .cl-effect-1 a:hover::before,
-    .cl-effect-1 a:hover::after,
-    .cl-effect-1 a:focus::before,
-    .cl-effect-1 a:focus::after {
-
+    .cl-effect-1:hover::before,
+    .cl-effect-1:hover::after,
+    .cl-effect-1:focus::before,
+    .cl-effect-1:focus::after {
       opacity: 1;
       -webkit-transform: translateX(0px);
       -moz-transform: translateX(0px);
       transform: translateX(0px);
     }
-    /* Effect 5: same word slide in */
-    .cl-effect-5 a {
+    /********************************************************************
+                                Efecto 5
+     ********************************************************************/
+    .cl-effect-5 {
       overflow: hidden;
       padding: 0 4px;
       height: 1em;
     }
 
-    .cl-effect-5 a{ color:#A4392C; }
-
-    .cl-effect-5 a span {
+    .cl-effect-5 span {
       position: relative;
       display: inline-block;
       -webkit-transition: -webkit-transform 0.3s;
@@ -84,7 +85,7 @@ body {
       transition: transform 0.3s;
     }
 
-    .cl-effect-5 a span::before {
+    .cl-effect-5 span::before {
       position: absolute;
       top: 100%;
       content: attr(data-hover);
@@ -94,30 +95,28 @@ body {
       transform: translate3d(0,0,0);
     }
 
-    .cl-effect-5 a:hover span,
-    .cl-effect-5 a:focus span {
+    .cl-effect-5:hover span,
+    .cl-effect-5:focus span {
       -webkit-transform: translateY(-100%);
       -moz-transform: translateY(-100%);
       transform: translateY(-100%);
     }
-
-    /* Effect 7: second border slides up */
-    .cl-effect-7 a {
+    /********************************************************************
+                                Efecto 7
+     ********************************************************************/
+    .cl-effect-7{
       padding: 12px 10px 10px;
-      color: #566473;
       text-shadow: none;
       font-weight: 700;
     }
-    .cl-effect-7 a{ color:#A4392C; }
 
-    .cl-effect-7 a::before,
-    .cl-effect-7 a::after {
+    .cl-effect-7::before,
+    .cl-effect-7::after {
       position: absolute;
       top: 100%;
       left: 0;
       width: 100%;
       height: 3px;
-      background: #228765;
       content: '';
       -webkit-transition: -webkit-transform 0.3s;
       -moz-transition: -moz-transform 0.3s;
@@ -127,50 +126,57 @@ body {
       transform: scale(0.85);
     }
 
-    .cl-effect-7 a::after {
+    .cl-effect-7::after {
       opacity: 0;
       -webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
       -moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
       transition: top 0.3s, opacity 0.3s, transform 0.3s;
     }
 
-    .cl-effect-7 a:hover::before,
-    .cl-effect-7 a:hover::after,
-    .cl-effect-7 a:focus::before,
-    .cl-effect-7 a:focus::after {
+    .cl-effect-7:hover::before,
+    .cl-effect-7:hover::after,
+    .cl-effect-7:focus::before,
+    .cl-effect-7:focus::after {
       -webkit-transform: scale(1);
       -moz-transform: scale(1);
       transform: scale(1);
     }
 
-    .cl-effect-7 a:hover::after,
-    .cl-effect-7 a:focus::after {
+    .cl-effect-7:hover::after,
+    .cl-effect-7:focus::after {
       top: 0%;
       opacity: 1;
     }
 
-    /* Effect 10: reveal, push out */
+    /********************************************************************
+                                Efecto 10
+     ********************************************************************/
     .cl-effect-10  {
       position: relative;
       z-index: 1;
     }
 
-    .cl-effect-10 a {
+    .cl-effect-10 {
       overflow: hidden;
       margin: 0 15px;
-      color:#228765;
+      color: #f2f2f2;
     }
 
-    .cl-effect-10 a span {
+    .cl-effect-10 span {
       display: block;
       padding: 10px 20px;
-      background: #A4392C;
       -webkit-transition: -webkit-transform 0.3s;
       -moz-transition: -moz-transform 0.3s;
       transition: transform 0.3s;
     }
 
-    .cl-effect-10 a::before {
+    .cl-10-blue span{ background: #4E7AC7; }
+    .cl-10-green span{ background: #36CC7C; }
+    .cl-10-gray span{ background: #76BFAC; }
+    .cl-10-pink span{ background: #CC8FAB; }
+    .cl-10-red span{ background: #E74C3C; }
+
+    .cl-effect-10::before {
       position: absolute;
       top: 0;
       left: 0;
@@ -178,8 +184,8 @@ body {
       padding: 10px 20px;
       width: 100%;
       height: 100%;
-      background: #7F3357;
-      color: #228765;
+      /*background: #7F3357;*/
+      color: #ffffff;
       content: attr(data-hover);
       -webkit-transition: -webkit-transform 0.3s;
       -moz-transition: -moz-transform 0.3s;
@@ -187,29 +193,36 @@ body {
       -webkit-transform: translateX(-25%);
     }
 
-    .cl-effect-10 a:hover span,
-    .cl-effect-10 a:focus span {
+    .cl-10-blue::before{ background: #35478C; }
+    .cl-10-green::before{ background: #77A668; }
+    .cl-10-gray::before{ background: #68A797; }
+    .cl-10-pink::before{ background: #FF66AD; }
+    .cl-10-red::before{ background: #C0392B; }
+
+    .cl-effect-10:hover span,
+    .cl-effect-10:focus span {
       -webkit-transform: translateX(100%);
       -moz-transform: translateX(100%);
       transform: translateX(100%);
     }
 
-    .cl-effect-10 a:hover::before,
-    .cl-effect-10 a:focus::before {
+    .cl-effect-10:hover::before,
+    .cl-effect-10:focus::before {
       -webkit-transform: translateX(0%);
       -moz-transform: translateX(0%);
       transform: translateX(0%);
     }
 
-    /* Effect 12: circle */
-    .cl-effect-12 a::before,
-    .cl-effect-12 a::after {
+    /********************************************************************
+                                Efecto 12
+     ********************************************************************/
+    .cl-effect-12::before,
+    .cl-effect-12::after {
       position: absolute;
       top: 50%;
       left: 50%;
       width: 100px;
       height: 100px;
-      border: 2px solid rgba(0,0,0,0.1);
       border-radius: 50%;
       content: '';
       opacity: 0;
@@ -220,9 +233,14 @@ body {
       -moz-transform: translateX(-50%) translateY(-50%) scale(0.2);
       transform: translateX(-50%) translateY(-50%) scale(0.2);
     }
-    .cl-effect-12 a{ color:#585858 ; }
 
-    .cl-effect-12 a::after {
+    .cl-12-blue::before, .cl-12-blue::after{ border: 2px solid rgba(53,71,140,0.1) }
+    .cl-12-green::before, .cl-12-green::after{ border: 2px solid rgba(119,166,104,0.1) }
+    .cl-12-gray::before, .cl-12-gray::after{ border: 2px solid rgba(88,88,88,0.1) }
+    .cl-12-pink::before, .cl-12-pink::after{ border: 2px solid rgba(127,51,87,0.1) }
+    .cl-12-red::before, .cl-12-red::after{ border: 2px solid rgba(192,57,43,0.1) }
+
+    .cl-effect-12::after {
       width: 90px;
       height: 90px;
       border-width: 6px;
@@ -231,26 +249,25 @@ body {
       transform: translateX(-50%) translateY(-50%) scale(0.8);
     }
 
-    .cl-effect-12 a:hover::before,
-    .cl-effect-12 a:hover::after,
-    .cl-effect-12 a:focus::before,
-    .cl-effect-12 a:focus::after {
+    .cl-effect-12:hover::before,
+    .cl-effect-12:hover::after,
+    .cl-effect-12:focus::before,
+    .cl-effect-12:focus::after {
       opacity: 1;
       -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
       -moz-transform: translateX(-50%) translateY(-50%) scale(1);
       transform: translateX(-50%) translateY(-50%) scale(1);
     }
-
-
-    /* Effect 13: three circles */
-    .cl-effect-13 a {
+    /********************************************************************
+                                Efecto 13
+     ********************************************************************/
+    .cl-effect-13 {
       -webkit-transition: color 0.3s;
       -moz-transition: color 0.3s;
       transition: color 0.3s;
-      color:#16193B;
     }
 
-    .cl-effect-13 a::before {
+    .cl-effect-13::before {
       position: absolute;
       top: 100%;
       left: 50%;
@@ -267,32 +284,30 @@ body {
       pointer-events: none;
     }
 
-    .cl-effect-13 a:hover::before,
-    .cl-effect-13 a:focus::before {
+    .cl-effect-13:hover::before,
+    .cl-effect-13:focus::before {
       color:#A4392C;
       text-shadow: 10px 0 #FF66AD, -10px 0 #FF66AD;
     }
 
-    .cl-effect-13 a:hover,
-    .cl-effect-13 a:focus {
+    .cl-effect-13:hover,
+    .cl-effect-13:focus {
       color:#A4392C;
     }
-
-
-    /* Effect 14: border switch */
-    .cl-effect-14 a {
+    /********************************************************************
+                                Efecto 14
+     ********************************************************************/
+    .cl-effect-14{
       padding: 0 20px;
-      height: 45px;
-      line-height: 45px;
-      color:#A4392C;
+      height: 30px;
+      line-height: 30px !important;
     }
 
-    .cl-effect-14 a::before,
-    .cl-effect-14 a::after {
+    .cl-effect-14::before,
+    .cl-effect-14::after {
       position: absolute;
-      width: 45px;
+      width: 30px;
       height: 2px;
-      background: #16193B;
       content: '';
       opacity: 0.2;
       -webkit-transition: all 0.3s;
@@ -301,7 +316,7 @@ body {
       pointer-events: none;
     }
 
-    .cl-effect-14 a::before {
+    .cl-effect-14::before {
       top: 0;
       left: 0;
       -webkit-transform: rotate(90deg);
@@ -312,7 +327,7 @@ body {
       transform-origin: 0 0;
     }
 
-    .cl-effect-14 a::after {
+    .cl-effect-14::after {
       right: 0;
       bottom: 0;
       -webkit-transform: rotate(90deg);
@@ -323,36 +338,37 @@ body {
       transform-origin: 100% 0;
     }
 
-    .cl-effect-14 a:hover::before,
-    .cl-effect-14 a:hover::after,
-    .cl-effect-14 a:focus::before,
-    .cl-effect-14 a:focus::after {
+    .cl-effect-14:hover::before,
+    .cl-effect-14:hover::after,
+    .cl-effect-14:focus::before,
+    .cl-effect-14:focus::after {
       opacity: 1;
     }
 
-    .cl-effect-14 a:hover::before,
-    .cl-effect-14 a:focus::before {
+    .cl-effect-14:hover::before,
+    .cl-effect-14:focus::before {
       left: 50%;
       -webkit-transform: rotate(0deg) translateX(-50%);
       -moz-transform: rotate(0deg) translateX(-50%);
       transform: rotate(0deg) translateX(-50%);
     }
 
-    .cl-effect-14 a:hover::after,
-    .cl-effect-14 a:focus::after {
+    .cl-effect-14:hover::after,
+    .cl-effect-14:focus::after {
       right: 50%;
       -webkit-transform: rotate(0deg) translateX(50%);
       -moz-transform: rotate(0deg) translateX(50%);
       transform: rotate(0deg) translateX(50%);
     }
-
-    /* Effect 18: cross */
+    /********************************************************************
+                                Efecto 18
+     ********************************************************************/
     .cl-effect-18 {
       position: relative;
       z-index: 1;
     }
 
-    .cl-effect-18 a {
+    .cl-effect-18{
       padding: 0 5px;
       color: #228765;
       font-weight: 700;
@@ -361,15 +377,14 @@ body {
       transition: color 0.3s;
     }
 
-    .cl-effect-18 a::before,
-    .cl-effect-18 a::after {
+    .cl-effect-18::before,
+    .cl-effect-18::after {
       position: absolute;
       width: 100%;
       left: 0;
       top: 50%;
       height: 2px;
       margin-top: -1px;
-      background: #16193B;
       content: '';
       z-index: -1;
       -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
@@ -378,47 +393,48 @@ body {
       pointer-events: none;
     }
 
-    .cl-effect-18 a::before {
+    .cl-effect-18::before {
       -webkit-transform: translateY(-20px);
       -moz-transform: translateY(-20px);
       transform: translateY(-20px);
     }
 
-    .cl-effect-18 a::after {
+    .cl-effect-18::after {
       -webkit-transform: translateY(20px);
       -moz-transform: translateY(20px);
       transform: translateY(20px);
     }
 
-    .cl-effect-18 a:hover,
-    .cl-effect-18 a:focus {
+    .cl-effect-18:hover,
+    .cl-effect-18:focus {
       color: #304269 ;
     }
 
-    .cl-effect-18 a:hover::before,
-    .cl-effect-18 a:hover::after,
-    .cl-effect-18 a:focus::before,
-    .cl-effect-18 a:focus::after {
+    .cl-effect-18:hover::before,
+    .cl-effect-18:hover::after,
+    .cl-effect-18:focus::before,
+    .cl-effect-18:focus::after {
       opacity: 0.7;
     }
 
-    .cl-effect-18 a:hover::before,
-    .cl-effect-18 a:focus::before {
+    .cl-effect-18:hover::before,
+    .cl-effect-18:focus::before {
       -webkit-transform: rotate(45deg);
       -moz-transform: rotate(45deg);
       transform: rotate(45deg);
     }
 
-    .cl-effect-18 a:hover::after,
-    .cl-effect-18 a:focus::after {
+    .cl-effect-18:hover::after,
+    .cl-effect-18:focus::after {
       -webkit-transform: rotate(-45deg);
       -moz-transform: rotate(-45deg);
       transform: rotate(-45deg);
     }
-    /* Effect 21: borders slight translate */
-    .cl-effect-21 a {
+    /********************************************************************
+                                Efecto 21
+     ********************************************************************/
+    .cl-effect-21 {
       padding: 10px;
-      color: #585858;
       font-weight: 700;
       text-shadow: none;
       -webkit-transition: color 0.3s;
@@ -426,13 +442,12 @@ body {
       transition: color 0.3s;
     }
 
-    .cl-effect-21 a::before,
-    .cl-effect-21 a::after {
+    .cl-effect-21::before,
+    .cl-effect-21::after {
       position: absolute;
       left: 0;
       width: 100%;
       height: 2px;
-      background: #585858;
       content: '';
       opacity: 0;
       -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -443,29 +458,24 @@ body {
       transform: translateY(-10px);
     }
 
-    .cl-effect-21 a::before {
+    .cl-effect-21::before {
       top: 0;
       -webkit-transform: translateY(-10px);
       -moz-transform: translateY(-10px);
       transform: translateY(-10px);
     }
 
-    .cl-effect-21 a::after {
+    .cl-effect-21::after {
       bottom: 0;
       -webkit-transform: translateY(10px);
       -moz-transform: translateY(10px);
       transform: translateY(10px);
     }
 
-    .cl-effect-21 a:hover,
-    .cl-effect-21 a:focus {
-      color: #585858;
-    }
-
-    .cl-effect-21 a:hover::before,
-    .cl-effect-21 a:focus::before,
-    .cl-effect-21 a:hover::after,
-    .cl-effect-21 a:focus::after {
+    .cl-effect-21:hover::before,
+    .cl-effect-21:focus::before,
+    .cl-effect-21:hover::after,
+    .cl-effect-21:focus::after {
       opacity: 1;
       -webkit-transform: translateY(0px);
       -moz-transform: translateY(0px);
