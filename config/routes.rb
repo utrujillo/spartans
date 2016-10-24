@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get 'themes/tipo'
   get 'themes/buttons'
   get 'themes/form'
-
+  get 'home/posts'
   # You can have the root of your site routed with "root"
   root 'home#index'
 end
