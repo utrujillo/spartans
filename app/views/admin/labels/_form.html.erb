@@ -1,12 +1,27 @@
 <%= render 'shared/error_messages', object: @label %>
 
-<%= form_for ["admin",@label] do |f| %>
-  <p>
-    <%= f.label :nombre_etiqueta %>
-    <%= f.text_field :nombre_etiqueta %>
-  </p>
+<%= form_for(['admin', @label], html: { class: 'form-horizontal' }) do |f| %>
+    <fieldset>
+        <legend>Registro</legend>
 
-  <p>
-    <%= f.submit nil %>
-  </p>
+        <div class="form-group">
+            <%= f.label :nombre_etiqueta, class: "col-lg-3 col-md-4 col-sm-4 col-xs-6 control-label" %>
+            <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6">
+                <%= f.text_field :nombre_etiqueta, autofocus: true, :class => 'form-control' %>
+            </div>
+        </div>
+
+        <div class="pull-left">
+            <%= link_to "Regresar", admin_labels_path, class: "btn btn-default" %>
+            <% if params[:action] == 'edit' %>
+                <%= link_to "Eliminar", admin_label_path(@label), method: :delete, data: { confirm: "x" }, class: "btn btn-danger" %>
+            <% end %>
+        </div>
+        <div class="pull-right">
+            <%= f.submit nil, class: "btn btn-primary" %>
+        </div>
+        <div class="clearfix"></div>
+
+    </fieldset>
+
 <% end %>
