@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 /*Comiezan los tipos de botones*/
 /*Comieza .estilo_btn1 BOTON NORMAL */
+=======
+<<<<<<< HEAD
+ /*Comiezan los tipos de botones*/
+  /*Comieza .estilo_btn1 */
+>>>>>>> master
 
 .estilo_btn1{    					
 	background:#ADD5F7;
@@ -16,6 +22,7 @@
 	padding:10px 10px;  /*Manipular el espacio interno orden manesillas del reloj*/
 }
 
+<<<<<<< HEAD
 .estilo_btn2:hover{
 	background:#ADD5F7;			
 	border:1px solid#ADD5F7;
@@ -39,3 +46,130 @@
 	border:1px solid ;
 	padding:10px 10px; 
 }
+=======
+		/*Comienza estilo_boton3*/
+		.estilo_btn3{
+		background: #ECF3F1;
+		border-radius:5px 5px 5px 5px;		/* tamaño de bordes*/
+		border: 1px solid #ECF3F1;
+		padding: 13px 77px;   	/*Manipular el espacio interno orden manesillas del reloj*/
+			}
+		
+			
+=======
+/******************************************************************************
+                                  Botones
+******************************************************************************/
+
+/* Estilos Generales y compartidos */
+.estilo_btn1,
+.btn1_disabled,
+.estilo_btn2,
+.btn2_disabled,
+.estilo_btn3,
+.btn3_disabled{
+  padding:10px;  /*Manipular el espacio interno orden manesillas del reloj*/
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.st-lg{ font-size: 18px; padding: 15px; }
+.st-sm{ font-size: 10px; padding: 7px;  }
+.st-xs{ font-size: 10px; padding: 2px;  }
+
+/* Estilo Boton 1 */
+.estilo_btn1{
+  border-radius: 5px;
+  background:#7FB2F0;
+  border:1px solid #7FB2F0;
+  color: #FCFCFC;
+}
+
+.estilo_btn1:hover{
+  background:#4E7AC7;
+  border:1px solid #4E7AC7;
+  text-decoration: none;
+  color: #FCFCFC;
+}
+
+.estilo_btn1:active{
+  background: #4E7AC7;
+  border: 1px solid #35478C;
+  -webkit-box-shadow: 0 0 4px #666;
+  box-shadow: 0 0 4px #666;
+  text-shadow: 0 2px 4px #333;
+}
+
+.btn1_disabled{
+  background: #ECF3F1;
+  border-radius: 5px;
+  border: 1px solid #ECF3F1;
+  color: #585858;
+  opacity: 1!important;
+}
+
+/* Estilo Boton 2 */
+.estilo_btn2{
+  background:#36CC7C;
+  color: #FCFCFC;
+  -webkit-box-shadow: inset 0 -2px 0 #77A668;
+  box-shadow: inset 0 -2px 0 #77A668;
+}
+
+.estilo_btn2:hover{
+  background:#36CC7C;
+  color: #FCFCFC;
+  text-decoration: none;
+  -webkit-box-shadow: inset 0 -2px 0 #228765;
+  box-shadow: inset 0 -2px 0 #228765;
+}
+
+.estilo_btn2:active{
+  background: #77A668;
+  color: #FCFCFC;
+  border: 1px solid #228765;
+  -webkit-box-shadow: inset 0 -2px 0 #228765, 0 0 4px 0 #228765;
+  box-shadow: inset 0 -2px 0 #228765, 0 0 4px 0 #228765;
+}
+
+.btn2_disabled{
+  background: #ECF3F1;
+  color: #585858;
+  opacity: 1!important;
+  -webkit-box-shadow: inset 0 -2px 0 #68A797 !important;
+  box-shadow: inset 0 -2px 0 #68A797 !important;
+}
+
+/* Estilo Boton 3 */
+.estilo_btn3{
+  background: #FCFCFC;
+  color: #E74C3C;
+  -webkit-box-shadow: inset 3px 0 0 #E74C3C;
+  box-shadow: inset 3px 0 0 #E74C3C;
+}
+
+.estilo_btn3:hover{
+  color: #C0392B;
+  text-decoration: none;
+  -webkit-box-shadow: inset 3px 0 0 #E74C3C, inset 0 0 0 1px #F19890;
+  box-shadow: inset 3px 0 0 #E74C3C, inset 0 0 0 1px #F19890;
+}
+
+.estilo_btn3:active{
+  background: #F9F3F2;
+  color: #E74C3C;
+  -webkit-box-shadow: inset 0 0 4px #F19890, inset 0 0 0 1px #F9F3F2;
+  box-shadow: inset 0 0 4px #F19890, inset 0 0 0 1px #F9F3F2;
+}
+
+.btn3_disabled{
+  background: #ECF3F1;
+  color: #585858;
+  opacity: 1!important;
+  -webkit-box-shadow: inset 0 0 0 1px #76BFAC !important;
+  box-shadow: inset 0 0 0 1px #76BFAC !important;
+}
+>>>>>>> 7aa7d01012a18e621a5327a8ba2ff9d0f7b1cb2a
+>>>>>>> master

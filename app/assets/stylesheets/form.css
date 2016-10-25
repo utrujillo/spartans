@@ -1,0 +1,28 @@
+.custom-form{ position: relative;  }
+
+	.custom-form input,
+	.custom-form select,
+	.custom-form textarea{
+		border: 1px solid #ECF3F1;
+		font-weight: 100;
+		border-radius: 0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+
+	.custom-form label{ color: #76BFAC; font-weight: 100;  }
+
+	.custom-form input[disabled="disabled"]{
+		color: #585858;
+		border: 1px solid #76BFAC;
+	}
+
+	.search-white{ position: relative; }
+
+  .search-white label{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 1.2em;
+    color: #76BFAC;
+  }

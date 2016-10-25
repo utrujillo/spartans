@@ -1,3 +1,7 @@
+
+
+/*<<<<<<< HEAD
+>>>>>>> master
 /*----------------------------------------------------------------------------------------------------------
 							            Encabezados, Subtitulos y Parrafos
 ------------------------------------------------------------------------------------------------------------*/
@@ -43,4 +47,45 @@ h3{font-size: 14px;}
 ******************************************************************************/
 .clearfix{ clear:both; }
 .fuente{ font-family: Monospace; }
+
+
+/*>>>>>>> b4910d2e7e9175f32e5acc704552c18d3eec3eed
+=======
+/******************************************************************************
+                              Estilos Generales
+******************************************************************************/
+h1,h2,h3,h4,p
+.encabezado {
+  color:#585858;
+  font-family:"Arial";
+}
+.encabezado{font-size: 50px;}
+
+h1{font-size: 30px;}
+h2{font-size: 18px;}
+h3{font-size: 14px;}
+h4{font-size: 14px;}
+
+.fuente{ font-family: Monospace; }
+
+
+/******************************************************************************
+                              Colores de texto
+******************************************************************************/
+.color-blue{ color: #4E7AC7; }
+.color-blue:hover{ color: #35478C; }
+
+.color-green{ color: #36CC7C; }
+.color-green:hover{ color: #77A668; }
+
+.color-gray{ color: #76BFAC; }
+.color-gray:hover{ color: #68A797; }
+
+.color-pink{ color: #CC8FAB; }
+.color-pink:hover{ color: #7F3357; }
+
+.color-red{ color: #E74C3C; }
+.color-red:hover{ color: #C0392B; }
+
+
 
