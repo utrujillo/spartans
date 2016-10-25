@@ -60,13 +60,13 @@
     padding:10px 67px;  /*Manipular el espacio interno orden manesillas del reloj*/
     }
       
-   .estilo_btn5{
+  .estilo_btn5{
     box-shadow:0px 3.7px 0px 0px #81bf81;
     font-family:Verdana;
     font-size:14px;
     }
 
-   .estilo_btn6{
+  .estilo_btn6{
     text-decoration:none;
     background:#36CC7C; 
     color:white; 
@@ -74,7 +74,7 @@
     padding:10px 67px;  /*Manipular el espacio interno orden manesillas del reloj*/
     }
       
-   .estilo_btn6:hover{
+  .estilo_btn6:hover{
     box-shadow:inset 0px -4px 0px #77A668;
     font-family:Verdana;
     font-size:14px;
@@ -88,20 +88,20 @@
     padding:10px 67px;  /*Manipular el espacio interno orden manesillas del reloj*/
     }
       
-   .estilo_btn7:active{
+  .estilo_btn7:active{
     box-shadow:1.0px 3.8px .5px 1.5px #228765;
     font-family:Verdana;
     font-size:14px;
     }
     
-    .estilo_btn8{
+  .estilo_btn8{
     text-decoration:none;
     background:#ECF3F1; 
     border:1px solid#ECF3F1;
     padding:10px 67px;  /*Manipular el espacio interno orden manesillas del reloj*/
     }
       
-   .estilo_btn8{
+  .estilo_btn8{
     box-shadow:0px 2px 0px 0px #68A797;
     font-family:Verdana;
     font-size:14px;
@@ -159,7 +159,7 @@
     padding:10px 67px;  /*Manipular el espacio interno orden manesillas del reloj*/
     }
       
-   .estilo_btn12{
+  .estilo_btn12{
     font-family:Verdana;
     font-size:14px;
     }
@@ -177,7 +177,7 @@
     padding:17px 45px;  /*Manipular el espacio interno orden manesillas del reloj*/
     }
 
-    .estilo_btn14{
+  .estilo_btn14{
     text-decoration:none;
     background:#36CC7C; 
     font-size:15px;
@@ -187,7 +187,7 @@
     padding:11px 50px;  /*Manipular el espacio interno orden manesillas del reloj*/
     }
 
-    .estilo_btn15{
+  .estilo_btn15{
     text-decoration:none;
     background:#F9F3F2; 
     font-size:14px;
@@ -197,7 +197,7 @@
     padding:8px 50px;  /*Manipular el espacio interno orden manesillas del reloj*/
     }
 
-    .estilo_btn16{
+  .estilo_btn16{
     text-decoration:none; 
     background:#91BED4; 
     font-size:14px;
