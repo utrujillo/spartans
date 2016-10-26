@@ -1,6 +1,8 @@
 module Admin
   class PostsController < ApplicationController
     before_action :set_post, only: [:edit, :show, :update, :destroy]
+    layout 'adminterface'
+
     def index
       @posts= Post.all
      end
@@ -50,7 +52,7 @@ module Admin
 
     private
       def post_params
-        params.require(:post).permit(:titulo,:contenido,:veces_leida)
+        params.require(:post).permit(:titulo,:contenido,:veces_leida,:user_id)
       end
 
       def set_post
