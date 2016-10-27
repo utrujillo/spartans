@@ -1,18 +1,33 @@
-<%= link_to "Nuevo", new_admin_label_path %>
-<table>
-  <thead>
-    <tr>
-      <th> Posts </th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @labels.each do |item| %>
-      <tr>
-        <td><%= item.nombre_etiqueta %>
-        <td><%= link_to "| Mostar |", admin_label_path(item) %></td>
-        <td><%= link_to "| Editar |", edit_admin_label_path(item) %></td>
-        <td><%= link_to "| Eliminar |", admin_label_path(item), method: :delete, data: { confirm: '¿Seguro de eliminar el elemento?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<p><%= link_to "Nuevo label", new_admin_label_path, class: "btn btn-primary" %></p>
+<% if @labels.blank? %>
+  <div class="alert alert-info alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong>Información!</strong> Aun no hay elementos en la base de datos.
+  </div>
+<% else %>
+
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Label</th>
+          <th width="200px">Opciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @labels.each do |item| %>
+        <tr>
+          <td><%= item.nombre_etiqueta %></td>
+          <td class="text-center">
+            <%= link_to "Mostar", admin_label_path(item), class: "btn btn-xs btn-info" %>
+            <%= link_to "Editar", edit_admin_label_path(item), class: "btn btn-xs btn-success" %>
+            <%= link_to "Eliminar", admin_label_path(item), method: :delete, data: { confirm: 'Estas seguro de eliminar el elemento?' }, class: "btn btn-xs btn-danger" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+    </table>
+  </div>
+
+<% end %>
+

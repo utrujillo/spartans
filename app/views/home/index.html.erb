@@ -1,39 +1,24 @@
-<p class="encabezado">Probando Grid System <i class="fa fa-comment"></i>&nbsp;<i class="fa fa-search"></i></h1>
-
 <!-- Container-fluid -->
-<div class="container-fluid">
+<div class="container">
 
   <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-      <h1>Texto Justificado</h1>
-      <p class="text-justify">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p class="text-justify">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque iusto labore. Saepe, similique, placeat! Vitae repudiandae, veritatis cumque eius natus saepe pariatur perferendis! Fuga, eveniet ducimus culpa at impedit aliquid asperiores architecto vero veniam temporibus in, voluptatum ullam optio commodi, quod voluptatibus placeat ad rerum nobis laudantium. Aperiam natus tenetur mollitia veritatis, ut rerum sed ullam fugiat sapiente odio quidem repudiandae nesciunt adipisci quaerat illo alias modi voluptatem. Nisi magnam earum similique voluptas inventore dicta animi vel eligendi laudantium vitae beatae quod veniam iure, possimus, aspernatur aperiam veritatis. Molestiae voluptates nam labore! Ullam rerum, placeat id aut. Quos, repudiandae!
-      </p>
-      <p class="text-justify">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, quis rem a et aut unde velit tempore quae placeat pariatur fugit ducimus esse officia consectetur itaque beatae. Vero debitis molestias maxime odit, quo quod saepe veniam et? Odit perferendis optio doloribus nostrum, ab quos ex debitis, sit, laudantium sint molestiae.
-      </p>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><%= render 'breadcumbs' %></div>
+  </div>
+
+  <div class="row">
+
+    <!-- Posts -->
+    <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
+      <%= render 'posts' %>
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-      <h1>Subtitulos - H1 30px</h1>
-      <p class="text-left">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
 
-      <h2>Subtitulos - H2 18px</h2>
-      <p class="text-center">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-
-      <h3>Subtitulos - H3 14px</h3>
-      <p class="text-right">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+    <!-- Card -->
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+      <%= render 'card' %>
     </div>
   </div>
 
 </div>
+
 
 
