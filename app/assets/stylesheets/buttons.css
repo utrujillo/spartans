@@ -1,46 +1,3 @@
-<<<<<<< HEAD
- /*Comiezan los tipos de botones*/
-  /*Comieza .estilo_btn1 */
-
-		.estilo_btn1{
-		background: #ADD5F7;
-		border-radius:5px 5px 5px 5px;		/* tamaño de bordes*/
-		border: 1px solid #ADD5F7;
-		padding: 13px 77px;   	/*Manipular el espacio interno orden manesillas del reloj*/
-		 }
-		.estilo_btn1:active{
-		border:1p solid #16193B ;
-		-webkit-box-shadow:mff buff blur color;
-		box-shadow:
-			}
- /*Comiensa .estilo_btn2*/
-
-		.estilo_btn2{
-		background: #4E7AC7;
-		border-radius:5px 5px 5px 5px;		/* tamaño de bordes*/
-		border: 1px solid #7FB2F0;
-		padding: 13px 77px;   	/*Manipular el espacio interno orden manesillas del reloj*/
-			}
-		.estilo_btn2:hover{
-		background: #ADD5F7;
-		font-weight: bold;
-		}
-		.estilo_btn2:active{
-		border:1p solid #16193B ;
-		-webkit-box-shadow:mff buff blur color;
-		box-shadow: 
-		}
-
-		/*Comienza estilo_boton3*/
-		.estilo_btn3{
-		background: #ECF3F1;
-		border-radius:5px 5px 5px 5px;		/* tamaño de bordes*/
-		border: 1px solid #ECF3F1;
-		padding: 13px 77px;   	/*Manipular el espacio interno orden manesillas del reloj*/
-			}
-		
-			
-=======
 /******************************************************************************
                                   Botones
 ******************************************************************************/
@@ -155,4 +112,3 @@
   -webkit-box-shadow: inset 0 0 0 1px #76BFAC !important;
   box-shadow: inset 0 0 0 1px #76BFAC !important;
 }
->>>>>>> 7aa7d01012a18e621a5327a8ba2ff9d0f7b1cb2a

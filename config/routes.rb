@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'themes/buttons'
   get 'themes/form'
   get 'themes/hyperlink'
-
+  get 'themes/index'
   # You can have the root of your site routed with "root"
   root 'home#index'
 end

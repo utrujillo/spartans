@@ -1,0 +1,8 @@
+<div class="admin-sidebar">
+  <ul class="nav nav-pills nav-stacked">
+    <li <%= 'class=active' if params[:action] == 'tipo' %> ><%= link_to "Tipografias", themes_tipo_path %></li>
+    <li <%= 'class=active' if params[:action] == 'buttons' %> ><%= link_to "Botones", themes_buttons_path %></li>
+    <li <%= 'class=active' if params[:action] == 'form' %> ><%= link_to "Formularios", themes_form_path %></li>
+    <li <%= 'class=active' if params[:action] == 'hyperlink' %> ><%= link_to "Hipervinculos", themes_hyperlink_path %></li>
+  </ul>
+</div>
