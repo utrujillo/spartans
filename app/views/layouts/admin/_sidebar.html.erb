@@ -6,5 +6,8 @@
     <li <%= 'class=active' if params[:controller] == 'admin/labels' %> >
       <%= link_to "Etiquetas", admin_labels_path %>
     </li>
+    <li <%= 'class=active' if params[:controller] == 'admin/posts' %> >
+      <%= link_to "Posts", admin_posts_path %>
+    </li>
   </ul>
 </div>

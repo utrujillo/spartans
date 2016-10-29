@@ -1,0 +1,41 @@
+<%= render 'shared/error_messages', object: @post %>
+
+<%= form_for(['admin',@post], html: { class: 'form-horizontal' }) do |f| %>
+  <fieldset>
+    <legend>Registro</legend>
+
+    <div class="form-group">
+      <%= f.label :usuario, class: "col-lg-3 col-md-4 col-sm-4 col-xs-6 control-label" %>
+      <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6">
+         <%= f.select :user_id, User.all.map { |u| [u.nombre_usuario, u.id ]},{prompt: '- Seleccionar -'}, {class: "form-control"} %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :titulo, class: "col-lg-3 col-md-4 col-sm-4 col-xs-6 control-label" %>
+      <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6">
+        <%= f.text_field :titulo, autofocus: true, :class => 'form-control' %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :contenido, class: "col-lg-3 col-md-4 col-sm-4 col-xs-6 control-label" %>
+      <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6">
+        <%= f.text_area :contenido, autofocus: true, :class => 'froala-editor' %>
+      </div>
+    </div>
+
+    <div class="pull-left">
+      <%= link_to "Regresar", admin_posts_path, class: "btn btn-default" %>
+      <% if params[:action] == 'edit' %>
+        <%= link_to "Eliminar", admin_post_path(@post), method: :delete, data: { confirm: "x" }, class: "btn btn-danger" %>
+      <% end %>
+    </div>
+
+    <div class="pull-right">
+      <%= f.submit nil, class: "btn btn-primary" %>
+    </div>
+    <div class="clearfix"></div>
+
+  </fieldset>
+<% end %>
