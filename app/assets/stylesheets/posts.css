@@ -1,20 +1,19 @@
-	.post-margin{
-		width: 100%;
-		border: 1px solid; 
-		border-right: 1px solid;
-		border-left: 1px solid;
-		border-color: #68A797;
-		box-shadow: 0px 0px 0px 0px;
-		padding-left: 0px;
-		padding-right: 0px;
-		margin-left: 0px;
-		margin-right: 0px;
-		margin-top: 10px;
-		margin-bottom: 10px;
-		height: 410px;
+	.padding-15{ padding: 0 15px; }
+	.no-padding-lr{ padding: 10px 0 !important; }
+	.wrap-overflow{
+		white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 	}
-	.post-title{padding-left: 15px;}
-	.post-content-center{text-align: center;}
+
+	.post-margin{
+		height: 410px;
+		border: 1px solid #68A797;
+		margin: 10px 0;
+	}
+
+	.post-margin p{ color: #76BFAC;  }
+
 	.post-image-wideopen{
 		width: 100%;
 		height: 200px;
@@ -24,62 +23,28 @@
 			height: 200px;
 			float: right;
 			float: left;
-			padding-bottom: 10px;
-		}
-		.image-video-wide{
-			width: 100%;
-			height: 200px;
-			padding-bottom: 10px;
-		}
-		.image-center{
-			width: 100%;
-			height: 200px;
-			padding-left: 15px;
-			padding-right: 15px;
-			padding-bottom: 10px;
-		}
-		.post-overflow{
-			padding-top: 10px;
-			padding-left: 10px;
-			margin-bottom: 15px;
-			display: block; /* Fallback for non-webkit */
-		  display: -webkit-box;
-		  -webkit-box-orient: vertical;
-		  max-width: 340px;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			height: 100px;
-			width: 340px;
-		}
-		.post-text-content-center{
-			text-align: center;
-			color: #76BFAC;
-			line-height: 16pt;
-			padding-bottom: 5px;
-		}
-		.post-text-content-justify{
-			text-align: justify;
-			color: #76BFAC;
-			padding-left: 15px;
-			padding-right: 15px;
-			line-height: 16pt;
-		}
-		.autor{
-			padding-left: 10px;
-			color: #4E7AC7;
-			font-weight: bold;
-			float: left;
-		}
-		.nombre-autor{
-			color: #ADD5F7;
-			font-weight: bold;
-			margin-left: 60px;
-			margin-right: 10px;
-		}
-		.link-align-right{
-			float: right;
 		}
 
-	
+	.post-overflow{
+		padding: 10px;
+		display: block; /* Fallback for non-webkit */
+	  display: -webkit-box;
+	  -webkit-box-orient: vertical;
+		overflow: hidden;
+		margin-bottom: 5px;
+		height: 120px;
+	}
+	.autor{
+		color: #4E7AC7;
+		float:left;
+		font-weight: 400;
+	}
+	.nombre-autor{
+		float: left;
+		color: #ADD5F7;
+		font-weight: 400;
+		margin-left: 5px;
+	}
+
 
 

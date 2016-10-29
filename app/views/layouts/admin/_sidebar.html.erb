@@ -1,6 +1,10 @@
 <div class="admin-sidebar">
   <ul class="nav nav-pills nav-stacked">
-    <li><%= link_to "Categorías", admin_categories_path %></li>
-    <li><%= link_to "Etiquetas", admin_labels_path %></li>
+    <li <%= 'class=active' if params[:controller] == 'admin/categories' %> >
+      <%= link_to "Categorías", admin_categories_path %>
+    </li>
+    <li <%= 'class=active' if params[:controller] == 'admin/labels' %> >
+      <%= link_to "Etiquetas", admin_labels_path %>
+    </li>
   </ul>
 </div>
