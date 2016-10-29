@@ -1,90 +1,100 @@
-<div class="container">
-	<div class="row">
+<!-- Navbar -->
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+  <%= render 'sidebar_theme' %>
+</div>
 
-		<!-- Parte Derecha -->
-		<div class="col-md-6">
-			<h4>Formulario Horizontal</h4>
-			<form action="#" class="form-horizontal custom-form">
+<!-- Content -->
+<div class="col-lg-9 col-md-9 col-sm-6 col-xs-12">
 
-				<div class="form-group">
-					<div class="col-md-12">
-						<div class="search-white">
-			        <label><i class="fa fa-search"></i></label>
-			        <input class="form-control" placeholder="Buscar...">
-			      </div>
+	<div class="container-fluid">
+		<div class="row">
+
+			<!-- Parte Derecha -->
+			<div class="col-md-6">
+				<h4>Formulario Horizontal</h4>
+				<form action="#" class="form-horizontal custom-form">
+
+					<div class="form-group">
+						<div class="col-md-12">
+							<div class="search-white">
+				        <label><i class="fa fa-search"></i></label>
+				        <input class="form-control" placeholder="Buscar...">
+				      </div>
+						</div>
 					</div>
-				</div>
 
-	      <div class="form-group">
-	      	<div class="col-md-6"><input type="text" class="form-control" placeholder="Ingresar Texto"></div>
-	      	<div class="col-md-6"><input type="text" class="form-control" disabled="disabled" value="Desactivado"></div>
-	      </div>
+		      <div class="form-group">
+		      	<div class="col-md-6"><input type="text" class="form-control" placeholder="Ingresar Texto"></div>
+		      	<div class="col-md-6"><input type="text" class="form-control" disabled="disabled" value="Desactivado"></div>
+		      </div>
 
-	      <div class="form-group">
-	      	<div class="col-md-12">
-	      		<select class="form-control">
-	      			<option value="0">- Seleccionar -</option>
-	      			<option value="1">Ingenieria de Software</option>
-	      			<option value="2">Computo de alto desempeño</option>
-	      		</select>
-	      	</div>
-	      </div>
+		      <div class="form-group">
+		      	<div class="col-md-12">
+		      		<select class="form-control">
+		      			<option value="0">- Seleccionar -</option>
+		      			<option value="1">Ingenieria de Software</option>
+		      			<option value="2">Computo de alto desempeño</option>
+		      		</select>
+		      	</div>
+		      </div>
 
-	      <div class="from-group">
-      		<div class="checkbox-inline">
+		      <div class="from-group">
+	      		<div class="checkbox-inline">
+						  <label><input type="checkbox" value="">Ingeniería</label>
+						</div>
+						<div class="checkbox-inline">
+						  <label><input type="checkbox">Computo alto desempeño</label>
+						</div>
+		      </div>
+
+		      <div class="form-group">
+		      	<div class="col-md-12">
+
+		      		<div class="radio-inline">
+							  <label><input type="radio" name="optionsRadios" checked> Ingeniería</label>
+							</div>
+							<div class="radio-inline">
+							  <label><input type="radio" name="optionsRadios">Computo alto desempeño</label>
+							</div>
+
+		      	</div>
+		      </div>
+
+				</form>
+			</div>
+
+			<!-- Parte Izquierda -->
+			<div class="col-md-6">
+				<h4>Formulario Vertical</h4>
+				<form action="#" class="custom-form">
+
+					<div class="form-group">
+				    <label>Nombre del campo:</label>
+				    <input type="text" class="form-control" placeholder="Ingresar Texto">
+				  </div>
+
+				  <div class="form-group">
+				    <label>Nombre del campo:</label>
+				    <textarea rows="5" class="form-control"></textarea>
+				  </div>
+
+				  <div class="checkbox">
 					  <label><input type="checkbox" value="">Ingeniería</label>
 					</div>
-					<div class="checkbox-inline">
+					<div class="checkbox">
 					  <label><input type="checkbox">Computo alto desempeño</label>
 					</div>
-	      </div>
 
-	      <div class="form-group">
-	      	<div class="col-md-12">
+					<div class="radio">
+					  <label><input type="radio" name="optionsRadios" checked> Ingeniería</label>
+					</div>
+					<div class="radio">
+					  <label><input type="radio" name="optionsRadios">Computo alto desempeño</label>
+					</div>
 
-	      		<div class="radio-inline">
-						  <label><input type="radio" name="optionsRadios" checked> Ingeniería</label>
-						</div>
-						<div class="radio-inline">
-						  <label><input type="radio" name="optionsRadios">Computo alto desempeño</label>
-						</div>
-
-	      	</div>
-	      </div>
-
-			</form>
-		</div>
-
-		<!-- Parte Izquierda -->
-		<div class="col-md-6">
-			<h4>Formulario Vertical</h4>
-			<form action="#" class="custom-form">
-
-				<div class="form-group">
-			    <label>Nombre del campo:</label>
-			    <input type="text" class="form-control" placeholder="Ingresar Texto">
-			  </div>
-
-			  <div class="form-group">
-			    <label>Nombre del campo:</label>
-			    <textarea rows="5" class="form-control"></textarea>
-			  </div>
-
-			  <div class="checkbox">
-				  <label><input type="checkbox" value="">Ingeniería</label>
-				</div>
-				<div class="checkbox">
-				  <label><input type="checkbox">Computo alto desempeño</label>
-				</div>
-
-				<div class="radio">
-				  <label><input type="radio" name="optionsRadios" checked> Ingeniería</label>
-				</div>
-				<div class="radio">
-				  <label><input type="radio" name="optionsRadios">Computo alto desempeño</label>
-				</div>
-
-			</form>
+				</form>
+			</div>
 		</div>
 	</div>
+
 </div>
