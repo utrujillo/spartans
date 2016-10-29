@@ -1,6 +1,8 @@
 $(function(){
   $('.froala-editor').froalaEditor({
-    toolbarButtons: ['bold','italic','fontSize','color','quote','orderedList','formatOL','insertLink','insertImage','html'],
-    imageInsertButtons: ['imageByURL']
+    toolbarButtons: ['fullscreen','|','bold','italic','fontSize','color','quote','orderedList','formatOL','insertLink','insertImage','insertVideo','html'],
+    imageInsertButtons: ['imageByURL'],
+    videoInsertButtons: ['videoByURL'],
+    height: 400
   })
 })

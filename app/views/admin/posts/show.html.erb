@@ -2,8 +2,15 @@
 
 <table class="table">
   <tr>
-    <th><%= @post.titulo %></th>
+    <th width="20%">Título</th>
+    <td><%= @post.titulo %></td>
+  </tr>
+  <tr>
+    <th>Publicación</th>
     <td><%=raw @post.contenido %></td>
+  </tr>
+  <tr>
+    <th>Veces leía</th>
     <td><%= @post.veces_leida %></td>
   </tr>
 </table>

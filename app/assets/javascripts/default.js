@@ -20,4 +20,6 @@
 //= require plugins/font_size.min.js
 //= require plugins/quote.min.js
 //= require plugins/lists.min.js
+//= require plugins/video.min.js
+//= require plugins/fullscreen.min.js
 //= require_tree .
