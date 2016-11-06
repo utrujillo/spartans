@@ -6,6 +6,7 @@ h1,h2,h3,h4,p
   color:#585858;
   font-family:"Arial";
 }
+
 .encabezado{font-size: 50px;}
 
 h1{font-size: 30px;}
@@ -14,9 +15,6 @@ h3{font-size: 14px;}
 h4{font-size: 14px;}
 
 .fuente{ font-family: Monospace; }
-<<<<<<< HEAD
-=======
-
 
 /******************************************************************************
                               Colores de texto
@@ -36,4 +34,4 @@ h4{font-size: 14px;}
 .color-red{ color: #E74C3C; }
 .color-red:hover{ color: #C0392B; }
 
->>>>>>> master
+
