@@ -1,82 +1,92 @@
-<div class="encabezado text-center">Botones</div>
+<!-- Navbar -->
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+  <%= render 'sidebar_theme' %>
+</div>
 
-<div class="container">
-  <div class="row">
+<!-- Content -->
+<div class="col-lg-9 col-md-9 col-sm-6 col-xs-12">
 
-    <!-- Columna 1 -->
-    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-      <h3 class="text-center">Estilo 1</h3>
-      <a class="estilo_btn1 btn-block">Estilo 1 (.estilo_btn1)</a>
-      <a href="#" class="btn btn1_disabled btn-block disabled"> Boton Desactivado</a>
+  <div class="encabezado text-center">Botones</div>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- Columna 1 -->
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <h3 class="text-center">Estilo 1</h3>
+        <a class="estilo_btn1 btn-block">Estilo 1 (.estilo_btn1)</a>
+        <a href="#" class="btn btn1_disabled btn-block disabled"> Boton Desactivado</a>
+      </div>
+
+      <!-- Columna 2 -->
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <h3 class="text-center">Estilo 2</h3>
+        <a class="estilo_btn2 btn-block">Estilo 2 (.estilo_btn2)</a>
+        <a href="#" class="btn btn2_disabled btn-block disabled"> Boton Desactivado</a>
+      </div>
+
+      <!-- Columna 3 -->
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <h3 class="text-center">Estilo 3</h3>
+        <a class="estilo_btn3 btn-block">Estilo 3 (.estilo_btn3)</a>
+        <a href="#" class="btn btn3_disabled btn-block disabled"> Boton Desactivado</a>
+      </div>
+
+      <!-- Columna 3 -->
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <h3 class="text-center">Estilo 4</h3>
+        <p><i class="fa fa-spinner fa-spin fa-fw"></i> Proximamente...</p>
+      </div>
+
     </div>
 
-    <!-- Columna 2 -->
-    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-      <h3 class="text-center">Estilo 2</h3>
-      <a class="estilo_btn2 btn-block">Estilo 2 (.estilo_btn2)</a>
-      <a href="#" class="btn btn2_disabled btn-block disabled"> Boton Desactivado</a>
-    </div>
+    <div class="row">
 
-    <!-- Columna 3 -->
-    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-      <h3 class="text-center">Estilo 3</h3>
-      <a class="estilo_btn3 btn-block">Estilo 3 (.estilo_btn3)</a>
-      <a href="#" class="btn btn3_disabled btn-block disabled"> Boton Desactivado</a>
-    </div>
+      <!-- Columna 1 -->
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <h3 class="text-center">Grande</h3>
+        <a class="estilo_btn1 btn-block st-lg">Grande (.st-lg)</a>
+        <a href="#" class="btn btn1_disabled btn-block disabled st-lg"> Boton Desactivado</a>
 
-    <!-- Columna 3 -->
-    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-      <h3 class="text-center">Estilo 4</h3>
-      <p><i class="fa fa-spinner fa-spin fa-fw"></i> Proximamente...</p>
-    </div>
+        <h3 class="text-center">Chico</h3>
+        <a class="estilo_btn1 btn-block st-sm">Grande (.st-sm)</a>
+        <a href="#" class="btn btn1_disabled btn-block disabled st-sm"> Boton Desactivado</a>
 
-  </div>
+        <h3 class="text-center">Extra chico</h3>
+        <a class="estilo_btn1 btn-block st-xs">Grande (.st-xs)</a>
+        <a href="#" class="btn btn1_disabled btn-block disabled st-xs"> Boton Desactivado</a>
+      </div>
 
-  <div class="row">
+      <!-- Columna 2 -->
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <h3 class="text-center">Grande</h3>
+        <a class="estilo_btn2 btn-block st-lg">Grande</a>
+        <a href="#" class="btn btn2_disabled btn-block disabled st-lg"> Boton Desactivado</a>
 
-    <!-- Columna 1 -->
-    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-      <h3 class="text-center">Grande</h3>
-      <a class="estilo_btn1 btn-block st-lg">Grande (.st-lg)</a>
-      <a href="#" class="btn btn1_disabled btn-block disabled st-lg"> Boton Desactivado</a>
+        <h3 class="text-center">Chico</h3>
+        <a class="estilo_btn2 btn-block st-sm">Grande (.st-sm)</a>
+        <a href="#" class="btn btn2_disabled btn-block disabled st-sm"> Boton Desactivado</a>
 
-      <h3 class="text-center">Chico</h3>
-      <a class="estilo_btn1 btn-block st-sm">Grande (.st-sm)</a>
-      <a href="#" class="btn btn1_disabled btn-block disabled st-sm"> Boton Desactivado</a>
+        <h3 class="text-center">Extra chico</h3>
+        <a class="estilo_btn2 btn-block st-xs">Grande (.st-xs)</a>
+        <a href="#" class="btn btn2_disabled btn-block disabled st-xs"> Boton Desactivado</a>
+      </div>
 
-      <h3 class="text-center">Extra chico</h3>
-      <a class="estilo_btn1 btn-block st-xs">Grande (.st-xs)</a>
-      <a href="#" class="btn btn1_disabled btn-block disabled st-xs"> Boton Desactivado</a>
-    </div>
+      <!-- Columna 2 -->
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <h3 class="text-center">Grande</h3>
+        <a class="estilo_btn3 btn-block st-lg">Grande</a>
+        <a href="#" class="btn btn3_disabled btn-block disabled st-lg"> Boton Desactivado</a>
 
-    <!-- Columna 2 -->
-    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-      <h3 class="text-center">Grande</h3>
-      <a class="estilo_btn2 btn-block st-lg">Grande</a>
-      <a href="#" class="btn btn2_disabled btn-block disabled st-lg"> Boton Desactivado</a>
+        <h3 class="text-center">Chico</h3>
+        <a class="estilo_btn3 btn-block st-sm">Grande (.st-sm)</a>
+        <a href="#" class="btn btn3_disabled btn-block disabled st-sm"> Boton Desactivado</a>
 
-      <h3 class="text-center">Chico</h3>
-      <a class="estilo_btn2 btn-block st-sm">Grande (.st-sm)</a>
-      <a href="#" class="btn btn2_disabled btn-block disabled st-sm"> Boton Desactivado</a>
+        <h3 class="text-center">Extra chico</h3>
+        <a class="estilo_btn3 btn-block st-xs">Grande (.st-xs)</a>
+        <a href="#" class="btn btn3_disabled btn-block disabled st-xs"> Boton Desactivado</a>
+      </div>
 
-      <h3 class="text-center">Extra chico</h3>
-      <a class="estilo_btn2 btn-block st-xs">Grande (.st-xs)</a>
-      <a href="#" class="btn btn2_disabled btn-block disabled st-xs"> Boton Desactivado</a>
-    </div>
-
-    <!-- Columna 2 -->
-    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-      <h3 class="text-center">Grande</h3>
-      <a class="estilo_btn3 btn-block st-lg">Grande</a>
-      <a href="#" class="btn btn3_disabled btn-block disabled st-lg"> Boton Desactivado</a>
-
-      <h3 class="text-center">Chico</h3>
-      <a class="estilo_btn3 btn-block st-sm">Grande (.st-sm)</a>
-      <a href="#" class="btn btn3_disabled btn-block disabled st-sm"> Boton Desactivado</a>
-
-      <h3 class="text-center">Extra chico</h3>
-      <a class="estilo_btn3 btn-block st-xs">Grande (.st-xs)</a>
-      <a href="#" class="btn btn3_disabled btn-block disabled st-xs"> Boton Desactivado</a>
     </div>
 
   </div>
