@@ -6,6 +6,8 @@ class User < ActiveRecord::Base
   validates :apellidoPaterno, presence: true
   validates :apellidoMaterno, presence: true
 
+  has_many :posts
+
   def nombre_usuario
     "#{nombre} #{apellidoPaterno} #{apellidoMaterno}"
   end
