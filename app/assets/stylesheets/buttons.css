@@ -207,6 +207,7 @@
     padding:3px 45px;  /*Manipular el espacio interno orden manesillas del reloj*/
     }
 
+
  /*Comiezan los tipos de botones*/
   /*Comieza .estilo_btn1 */
   .estilo_btn1{
@@ -221,7 +222,7 @@
 		box-shadow:
 			}
  /*Comiensa .estilo_btn2*/
-||.estilo_btn2{
+  .estilo_btn2{
 		background: #4E7AC7;
 		border-radius:5px 5px 5px 5px;		/* tamaño de bordes*/
 		border: 1px solid #7FB2F0;
@@ -244,6 +245,12 @@
 		border: 1px solid #ECF3F1;
 		padding: 13px 77px;   	/*Manipular el espacio interno orden manesillas del reloj*/
 			}
+
+		
+			
+
+
+
 /******************************************************************************
                                   Botones
 ******************************************************************************/
