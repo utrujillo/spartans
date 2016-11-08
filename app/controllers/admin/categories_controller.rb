@@ -4,9 +4,13 @@ module Admin
     before_filter :authenticate_user!
     before_action :set_category, only: [:edit, :show, :update, :destroy]
     layout 'adminterface'
-
     def index
       @categories = Category.all
+
+      respond_to do |format|
+      format.html
+      format.json {render json: categories}
+      end
     end
 
     def new
