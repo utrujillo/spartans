@@ -1,0 +1,17 @@
+
+/** INICIAN LOS BREADCUMBS**/
+body{
+	padding-top:100px;
+	text-align:center; 
+	font-size:15px;
+}
+
+.Breadcumb{
+	display:inline-block;
+	}
+
+.Breadcumb a{
+	display:block;
+	float:left;
+	text-decoration:none;
+	}
