@@ -14,21 +14,21 @@
     <div class="form-group">
       <%= f.label :titulo, class: "col-lg-3 col-md-4 col-sm-4 col-xs-6 control-label" %>
       <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6">
-        <%= f.text_field :titulo, autofocus: true, :class => 'form-control' %>
+        <%= f.text_field :titulo, :class => 'form-control' %>
       </div>
     </div>
 
     <div class="form-group">
       <%= f.label :contenido, class: "col-lg-3 col-md-4 col-sm-4 col-xs-6 control-label" %>
       <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6">
-        <%= f.text_area :contenido, autofocus: true, :class => 'froala-editor' %>
+        <%= f.text_area :contenido, :class => 'froala-editor' %>
       </div>
     </div>
 
     <div class="form-group">
       <%= f.label :category_tokens, "Categorias", class: "col-lg-3 col-md-4 col-sm-4 col-xs-6 control-label" %>
       <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6">
-        <%= f.text_field :category_tokens, autofocus: true, :class => 'form-control' %>
+        <%= f.select :category_tokens, Category.all.map { |c| [c.nombre_categoria, c.id] },{}, { class: 'form-control', multiple: true } %>
       </div>
     </div>
 

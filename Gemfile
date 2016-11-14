@@ -19,6 +19,7 @@ gem 'devise'
 gem 'puma'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'chosen-rails'
 gem 'faker'
 gem 'tzinfo-data', platforms: [:x64_mingw, :mingw, :mswin]
 
