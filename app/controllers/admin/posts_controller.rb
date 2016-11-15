@@ -25,6 +25,7 @@ module Admin
     end
 
     def update
+      binding.pry
       respond_to do |format|
         if @post.update(post_params)
           format.html { redirect_to [ "admin", @post ], notice: 'Se ha actualizado el post' }
@@ -52,7 +53,11 @@ module Admin
 
     private
       def post_params
-        params.require(:post).permit(:titulo,:contenido,:veces_leida,:user_id)
+        params.require(:post).permit(
+                              :titulo,:contenido,:veces_leida,:user_id,
+                              post_has_categories_attributes:
+                                [ :post_id, :category_id ]
+                              )
       end
 
       def set_post
