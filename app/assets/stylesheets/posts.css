@@ -53,7 +53,9 @@
 		font-weight: 400;
 		margin-left: 5px;
 	}
-
-
-
-
+	.icon-align{padding-top: 2px;}
+	.gradient{width: 0%; opacity: 0;}
+	.skyblue{
+	background-color: #22c8ff;
+	}
+.slide-size{height: 200px;}
