@@ -52,7 +52,7 @@ module Admin
 
     private
       def post_params
-        params.require(:post).permit(:titulo,:contenido,:veces_leida,:user_id)
+        params.require(:post).permit(:titulo,:contenido,:veces_leida,:user_id,:category_tokens)
       end
 
       def set_post

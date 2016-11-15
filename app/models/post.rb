@@ -11,4 +11,6 @@ class Post < ActiveRecord::Base
     self.category_ids = ids.split(',')
   end
 
+  belongs_to :user
+
 end

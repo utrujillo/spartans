@@ -10,8 +10,6 @@ module Admin
       format.html
       format.json {render json: categories}
       end
-
-
     end
 
     def new
