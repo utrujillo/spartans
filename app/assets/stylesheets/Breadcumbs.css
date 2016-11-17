@@ -1,0 +1,24 @@
+
+/** INICIAN LOS BREADCUMBS**/
+body{
+	padding-top:100px;
+	text-align:center; 
+	font-size:15px;
+}
+
+.Breadcumb{
+	display:inline-block;
+	 border:2px solid#ECF3F1;
+	 padding-top:10px ;
+	 padding-left:100px ;
+	 padding-right:100px;
+	}
+
+.Breadcumb a{
+	display:inline block; 
+	text-decoration:none !important;
+	font-size:17px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#4E7AC7;
+	} 
