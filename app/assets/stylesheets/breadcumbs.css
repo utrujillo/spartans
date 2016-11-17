@@ -2,11 +2,11 @@
 .breadcumb{
 	text-align: center;
 	border:1px solid #ECF3F1;
-	padding-top:10px;
+	padding-top:10px ;
 }
 
 .breadcumb a{
 	font-size:14px !important;
-	font-weight: 600 !important;
+	font-weight:600 !important;
+	color:#4E7AC7;
 }
-
