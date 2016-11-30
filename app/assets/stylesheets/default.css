@@ -16,7 +16,6 @@
  *= require plugins/video.min.css
  *= require plugins/fullscreen.min.css
  *= require_tree .
- *= require token-input-facebook
  *= require_self
  */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
