@@ -11,11 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20161103205450) do
-=======
-ActiveRecord::Schema.define(version: 20161020180225) do
->>>>>>> master
 
   create_table "categories", force: :cascade do |t|
     t.string   "nombre_categoria"
@@ -29,7 +25,6 @@ ActiveRecord::Schema.define(version: 20161020180225) do
     t.datetime "updated_at",      null: false
   end
 
-<<<<<<< HEAD
   create_table "post_has_categories", force: :cascade do |t|
     t.integer  "post_id"
     t.integer  "category_id"
@@ -40,8 +35,6 @@ ActiveRecord::Schema.define(version: 20161020180225) do
   add_index "post_has_categories", ["category_id"], name: "index_post_has_categories_on_category_id"
   add_index "post_has_categories", ["post_id"], name: "index_post_has_categories_on_post_id"
 
-=======
->>>>>>> master
   create_table "posts", force: :cascade do |t|
     t.string   "titulo"
     t.string   "contenido"
