@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get 'post/index'
 
   namespace :admin do
@@ -7,6 +8,7 @@ Rails.application.routes.draw do
     resources :posts
     resources :home, only: [:index]
   end
+
   devise_for :users
   get 'themes/tipo'
   get 'themes/buttons'
@@ -16,5 +18,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
 
-  resources :posts, only: [:show]
+  resources :posts, only: [:show] do
+    resources :comments, only: [:create]
+  end
 end
