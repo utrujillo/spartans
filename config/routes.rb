@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'post/index'
+
   namespace :admin do
     resources :categories
     resources :labels
@@ -13,4 +15,6 @@ Rails.application.routes.draw do
   get 'themes/index'
   # You can have the root of your site routed with "root"
   root 'home#index'
+
+  resources :posts, only: [:show]
 end

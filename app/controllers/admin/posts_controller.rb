@@ -2,6 +2,7 @@ module Admin
   class PostsController < ApplicationController
     before_action :set_post, only: [:edit, :show, :update, :destroy]
     layout 'adminterface'
+    #before_filter :authenticate_user!
 
     def index
       @posts= Post.all
@@ -9,6 +10,7 @@ module Admin
 
     def new
       @post= Post.new
+
     end
 
     def create

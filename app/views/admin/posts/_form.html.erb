@@ -7,7 +7,9 @@
     <div class="form-group">
       <%= f.label :usuario, class: "col-lg-3 col-md-4 col-sm-4 col-xs-6 control-label" %>
       <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6">
-         <%= f.select :user_id, User.all.map { |u| [u.nombre_usuario, u.id ]},{prompt: '- Seleccionar -'}, {class: "form-control"} %>
+
+         <%= f.select :user_id, User.all.map { |u| [u.nombre_usuario, u.id ]},{ selected: current_user.id }, {class: "form-control"} %>
+
       </div>
     </div>
 
@@ -28,14 +30,9 @@
     <div class="form-group">
       <%= f.label :category_id, "Categorias", class: "col-lg-3 col-md-4 col-sm-4 col-xs-6 control-label" %>
       <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6">
-
-      <%= f.fields_for :has_categories do |hc| %>
-        <%= hc.select :category_id, Category.all.map { |c| [c.nombre_categoria, c.id] },{}, { class: 'form-control', multiple: true } %>
-      <% end %>
-        <%# f.select :categories, Category.all.map { |c| [c.nombre_categoria, c.id] },{}, { class: 'form-control', multiple: true } %>
+        <%= f.select :category_tokens, Category.all.map { |c| [c.nombre_categoria, c.id] },{},{ class: 'form-control', multiple: true } %>
       </div>
     </div>
-
 
     <div class="pull-left">
       <%= link_to "Regresar", admin_posts_path, class: "btn btn-default" %>
