@@ -8,6 +8,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'therubyracer', platforms: :ruby
 gem "wysiwyg-rails"
 
+gem 'rails-jquery-tokeninput', '~> 0.2.6'
+
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
@@ -18,6 +20,7 @@ gem 'devise'
 gem 'puma'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'chosen-rails'
 gem 'faker'
 gem 'tzinfo-data', platforms: [:x64_mingw, :mingw, :mswin]
 

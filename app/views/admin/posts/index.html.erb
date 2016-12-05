@@ -14,14 +14,15 @@
           <th>Usuario </th>
           <th>Nombre del post </th>
           <th>Veces leída </th>
+          <th>Opciones</th>
         </tr>
       </thead>
       <tbody>
         <% @posts.each do |item| %>
           <tr>
             <td><%= item.user.nombre_usuario %></td>
-            <td><%= item.titulo    %></td>
-            <td><%= item.veces_leida  %></td>
+            <td><%= item.titulo %></td>
+            <td><%= item.veces_leida %></td>
             <td class="text-center">
               <%= link_to "Mostar", admin_post_path(item), class: "btn btn-xs btn-info" %>
               <%= link_to "Editar", edit_admin_post_path(item), class: "btn btn-xs btn-success" %>
