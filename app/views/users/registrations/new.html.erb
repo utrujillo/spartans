@@ -1,49 +1,76 @@
-<h2>Sign up</h2>
-
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
-
-  <div class="field">
-    <%= f.label :nombre %><br />
-    <%= f.text_field :nombre %>
+<div id="sign-up-content">
+  <div id ="figure-cuadro"></div>
+  <div id="login-logo">
+      <img id="spartan-radio-login" src="/images/spartan_image.jpg"/>
   </div>
-
-  <div class="field">
-    <%= f.label :Apellido_Paterno %><br />
-    <%= f.text_field :apellidoPaterno %>
+  <div id ="figure-triangule"></div>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
+  <div id ="text-login-up">
+    <div class="field-jump">
+      <%= f.text_field :nombre ,class:'input__field input__field--float'%>
+      <div class="label-position-nombre">
+         <label class="input__label input__label--float">
+            <span class="input__label-content input__label-content--float">Nombre</span>
+         </label>
+      </div>
+    </div>
+    <div class="field-jump">
+      <%= f.text_field :apellidoPaterno,class:'input__field input__field--float'%>
+      <div class="label-position-paterno">
+         <label class="input__label input__label--float">
+             <span class="input__label-content input__label-content--float">Apelido paterno</span>
+         </label>
+      </div>
+    </div>
+    <div class="field-jump">
+      <%= f.text_field :apellidoMaterno,class:'input__field input__field--float'%>
+       <div class="label-position-materno">
+         <label class="input__label input__label--float">
+            <span class="input__label-content input__label-content--float">Apelido materno</span>
+         </label>
+       </div>
+    </div>
+    <div class="field-jump">
+      <%= f.text_field :fechaNacimiento,class:'input__field input__field--float' %>
+      <div class="label-position-nacimiento">
+        <label class="input__label input__label--float">
+            <span class="input__label-content input__label-content--float">Fecha de nacimiento</span>
+         </label>
+      </div>
+    </div>
+    <div class="field-jump">
+      <%= f.email_field :email, autofocus: true,class:'input__field input__field--float' %>
+      <div class="label-position-E-mail">
+        <label class="input__label input__label--float">
+            <span class="input__label-content input__label-content--float">Correo electrónico</span>
+        </label>
+      </div>
+    </div>
+    <div class="field-jump">
+      <%= f.password_field :password, autocomplete: "off",class:'input__field input__field--float' %>
+      <div class="label-position-password">
+        <label class="input__label input__label--float">
+          <% if @minimum_password_length %>
+            <span class="input__label-content input__label-content--float">contraseña
+              <em>(<%= @minimum_password_length %> caracteres minimo) </em>
+              <% end %><br />
+            </span>
+        </label>
+      </div>
+    </div>
+    <div class="field-jump">
+      <%= f.password_field :password_confirmation, autocomplete: "off" ,class:'input__field input__field--float'%>
+        <div class="label-position-confirmar-contraseña">
+          <label class="input__label input__label--float">
+             <span class="input__label-content input__label-content--float">confirmar contraseña</span>
+         </label>
+        </div>
+    </div>
+    <div class="clearfix">
+      <%= f.submit "Sign up" ,id:'boton-login-up' %>
+    </div>
+    <% end %>
+    <!-- <%= render "users/shared/links" %> -->
   </div>
-
-  <div class="field">
-    <%= f.label :Apellido_Materno %><br />
-    <%= f.text_field :apellidoMaterno %>
-  </div>
-
-  <div class="field">
-    <%= f.label :Fecha_de_Nacimiento %><br />
-    <%= f.text_field :fechaNacimiento %>
-  </div>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "users/shared/links" %>
+</div>

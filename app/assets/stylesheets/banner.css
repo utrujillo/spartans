@@ -1,44 +1,47 @@
-html,body{
-	position: absolute;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
-}
 .banner-style1{
+	display: flex;
 	position: relative;
 	width: 100%;
 	height: 200px;
-	min-height: 200px;
 	background-image: url('/images/blue.png');
-	color: #fff;
-	margin: 0px;
-	padding-bottom: 0;
+	vertical-align: middle;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	align-items: center;
+
 }
-	.div1, .div2 , .div3{
-		float: left;
-		width: 33%;
+	.title-blog{
+		position: absolute;
+		font-size: 3vw;
+		text-align: center;
+		vertical-align: middle;
+		color: white;
+		height: 50%;
+		margin: -25px 50px;
+		padding: 0px 10px;
 	}
-		.title-blog{
-			font-size: 2em;
-			margin: 0;
-			text-align: center;
-			line-height: 200px;
-		}
-		.leyenda{
-			font-size: 1.5em;
-			text-align: center;
-			color: white;
-			line-height: 200px;
-		}
-		.spartan-logo145{
-			line-height: 200px;
-			margin: 0% auto;
+	.spartan-logo{
+		width: 100%;
+		height: 100%;
+	}
+	.leyenda{
+		position: absolute;
+		font-size: 2vw;
+		text-align: center;
+		height: 500%;
+		margin: -10px 50px;
+		padding: 0px 10px;
+		color: white;
+		vertical-align: middle;
+	}
+
+		.border-radius50{
 			position: relative;
-			left: 25%;
+			height: 50%;
+			width: 50%;
+			border-radius: 50%;
+			vertical-align: middle;
+			padding: 0px 10px;
+			margin:10px 100px;
 		}
-			.border-radius50{
-				height: 175px;
-				width: 175px;
-				border-radius: 50%;
-			}
+
