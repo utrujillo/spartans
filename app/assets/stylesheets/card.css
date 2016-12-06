@@ -5,13 +5,25 @@
   background: #FCFCFC;
   margin-top: 10px;
   border: 1px solid #4E7AC7;
-  font-size: 14px
+  font-size: 14px;
+  width:360px;
 }
 
 #head {
   width: 100%;
   height: 200px;
   background: #E74C3C;
+  background-position: right bottom;
+  background-size: cover;
+  border-bottom: 1px solid #4E7AC7
+}
+
+/*etiqueta "head-posts-x" especial para /posts/x   */
+
+#head-posts-x {
+  width: 100%;
+  height: 200px;
+  background: #FFC107;
   background-position: right bottom;
   background-size: cover;
   border-bottom: 1px solid #4E7AC7
@@ -40,7 +52,7 @@
 
 .social-network {
   padding-left: 0px;
-  margin-left: -12px;
+  margin-left: -15px;
 }
 
 #content h1 {
@@ -90,3 +102,28 @@
     color: black;
     -webkit-transition: all 0.5s;
   }
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  text-align: justify;
+ }
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+  width: 360px;
+}
+
+
