@@ -1,0 +1,46 @@
+.admin-comment, .user-comment{ position: relative; }
+
+.admin-comment .comment{ background:#91BED4; border: 1px solid #91BED4; }
+.user-comment .comment{ background: #ADD5F7; border: 1px solid #ADD5F7; }
+    .comment {
+        padding: 13px;
+        margin-left: 115px;
+        margin-bottom: 10px;
+        margin-top: 3px;
+        text-align: justify;
+        color: white;
+        position: relative;
+        min-height: 75px;
+        }
+
+.admin-comment .comment:before{ border-right: 13px solid #91BED4; }
+.user-comment .comment:before{ border-right: 13px solid #ADD5F7; }
+    .comment:before {
+        height: 0px;
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        margin-left: -24px;
+        margin-bottom: 6px;
+        margin-top: -8px;
+        position: absolute;
+        content: "";
+        }
+
+.admin-comment .avatar, .user-comment .avatar{ position: absolute; padding: 0px; left: 30px; }
+.admin-comment img{ border: 3px double #76BFAC; }
+.user-comment img{ border: 3px double #ADD5F7; }
+    .admin-comment img, .user-comment img{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        }
+
+.admin-comment .avatar .circulo{ width: 11px; height: 11px; background: #91b5d4; top: 60px; left: 65px; }
+.user-comment .avatar .circulo{ width: 20px; height: 20px; background: #F26101; top: 60px; left: 55px; }
+    .admin-comment .avatar .circulo, .user-comment .avatar .circulo{
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        border:1px solid white;
+        position: absolute;
+    }

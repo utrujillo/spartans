@@ -1,0 +1,24 @@
+<% if @post.comments.count > 0 %>
+
+  <% @post.comments.each do |comment| %>
+
+    <% if comment.nombre_completo.present? %>
+      <div class="admin-comment padding-15">
+        <div class="avatar">
+          <img src="/images/stormtruper.jpg" alt="avatar"><div class="circulo"></div>
+        </div>
+        <div class="comment"><%= comment.comentario %></div>
+      </div>
+    <% elsif comment.comentario %>
+      <div class="user-comment padding-15">
+        <div class="avatar">
+          <img src="/images/snapchat-logo.png" alt="avatar"><div class="circulo"></div>
+        </div>
+        <div class="comment"><%= comment.comentario %></p>
+        </div>
+      </div>
+    <% end %>
+
+  <% end %>
+
+<% end %>
