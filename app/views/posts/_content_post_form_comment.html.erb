@@ -1,12 +1,11 @@
 <div style="padding: 15px;">
-
-  <!-- Formulario de comentarios -->
-  <form class="custom-form">
+  <%= form_for([@post, @post.comments.build], html: { class: 'custom-form' }) do |f| %>
     <div class="form-group">
-      <textarea rows="5" class="form-control"></textarea>
+      <%= f.text_area :comentario, rows: 5, class: 'form-control' %>
+      <%= f.hidden_field :nombre_completo, value: current_user.nombre_usuario %>
     </div>
 
-    <input type="submit" name="commit" value="Publicar comentario" class="estilo_btn2 btn-block">
-  </form>
-
+    <%= f.submit 'Publicar comentario', class: 'estilo_btn2 btn-block' %>
+  <% end %>
 </div>
+
