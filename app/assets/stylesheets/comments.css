@@ -10,6 +10,7 @@
         text-align: justify;
         color: white;
         position: relative;
+        min-height: 75px;
         }
 
 .admin-comment .comment:before{ border-right: 13px solid #91BED4; }
