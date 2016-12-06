@@ -1,56 +1,47 @@
-<div class="row">
-	<!-- Primer opcion de post -->
-	<div class="col-md-6 col-xs-12">
-		<div class="post-margin">
-			<!-- Tiitulo -->
-			<div class="padding-15">
-				<h2 class="text-center wrap-overflow">Los bichos en R3 (X,Y,Z)</h2>
-			</div>
-			<!-- Imagen -->
-			<div class="post-image-wideopen">
-				<img src="/images/image.png" class="image-wide grow">
-			</div>
-			<!-- Cuerpo -->
-			<div class="post-overflow">
-				<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-				</p>
-				<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-				</p>
-			</div>
-			<!-- Pie de post -->
-			<div class="padding-15">
-				<span class="autor">Autor</span>
-				<span class="nombre-autor">utrujillo</span>
-				<a href="#" class="cl-effect-1 color-green pull-right">Leer más ...</a>
-			</div>
-    	</div>
-	</div>
+<% @posts.each do |item| %>
 
-	<!-- Segunda opcion de post -->
-	<div class="col-md-6 col-xs-12">
-		<div class="post-margin padding-15">
-			<!-- Titulo -->
-			<div>
-				<h2>Los bichos en R3 (X,Y,Z)</h2>
-			</div>
-			<!-- Imagen -->
-			<div class="post-image-wideopen">	
-				<img src="/images/image.png" class="image-wide grow">			
-			</div>
-			<!-- Cuerpo -->
-			<div class="post-overflow no-padding-lr">
-				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-				</p>
-				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-				</p>
-			</div>
-			<!-- Pie de post -->
-			<div class="padding-15-tb">
-				<span class="autor">Autor</span>
-				<span class="nombre-autor">utrujillo</span>
-				<a href="#" class="cl-effect-13 color-green pull-right"><span>Leer más</span></a>
-			</div>
-		</div>
-	</div>
-	<!-- Tercera opcion de post -->
-</div>
+  <!-- Primer opcion de post -->
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div class="post-margin">
+
+      <!-- Tiitulo -->
+      <div class="padding-15">
+        <h2 class="text-center wrap-overflow"> <%=raw item.titulo %> </h2>
+      </div>
+
+      <!-- Imagen -->
+      <div class="post-image-wideopen">
+
+      	<!-- Obtengo la primera imagen de mi post -->
+				<% imageSrc = ( /img.*?src="(.*?)"/i.match(item.contenido) ).to_s %>
+
+				<% if imageSrc.length > 0 %>
+					<% getSrc = ( /src="(.*?)"/i.match(imageSrc) ).to_s[5..-2] %>
+					<%= image_tag getSrc, class: 'image-wide grow' %>
+				<% else %>
+        	<img src="/images/image.png" class="image-wide grow">
+				<% end %>
+
+      </div>
+
+      <!-- Cuerpo -->
+      <div class="post-overflow">
+      	<%# paragraphs = ( /<\s*?p(.*?)>(.*?)<\s*\/\s*p>/.match(item.contenido) ) %>
+        <p class="text-center"><%=raw item.contenido %></p>
+      </div>
+      <!-- Pie de post -->
+      <div class="padding-15">
+        <span class="autor">Autor</span>
+        <span class="nombre-autor"><%= item.user.nombre_usuario %></span>
+        <%= link_to "Leer más", post_path(item.id), class: 'cl-effect-1 color-green pull-right' %>
+
+        <% if current_user.present? %>
+					<%= link_to edit_admin_post_path(item), class: "cl-effect-13 color-red pull-right" do %>
+					  <span>Editar</span>
+					<% end %>
+        <% end %>
+
+      </div>
+      </div>
+  </div>
+<%  end %>

@@ -11,6 +11,7 @@
 // about supported directives.
 //= require jquery
 //= require jquery_ujs
+//= require jquery.tokeninput
 //= require froala_editor.min.js
 //= require plugins/code_view.min.js
 //= require plugins/colors.min.js
@@ -22,4 +23,5 @@
 //= require plugins/lists.min.js
 //= require plugins/video.min.js
 //= require plugins/fullscreen.min.js
+//= require chosen-jquery
 //= require_tree .

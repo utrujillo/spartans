@@ -9,15 +9,18 @@
 
     <!-- Posts -->
     <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
-      <div class="bg-white"><%= render 'content_post' %></div>
-      <div class="bg-white"><%= render 'content_post_form_comment' %></div>
-
+      <div class="bg-white">
+        <%= render 'content_post' %>
+        <%= render 'content_post_form_comment' %>
+        <%= render 'content_post_comments' %>
+      </div>
     </div>
 
     <!-- Card -->
     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
       <div class="bg-white"><%= render 'user_card' %></div>
     </div>
+
   </div>
 
 </div>

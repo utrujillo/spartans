@@ -1,27 +1,11 @@
-<h2>Comentarios</h2>
-<% @post.comments.each do |comment| %>
-  <p>
-    <strong>Nombre: </strong>
-    <%= comment.nombre_completo %>
-  </p>
+<div style="padding: 15px;">
+  <%= form_for([@post, @post.comments.build], html: { class: 'custom-form' }) do |f| %>
+    <div class="form-group">
+      <%= f.text_area :comentario, rows: 5, class: 'form-control' %>
+      <%= f.hidden_field :nombre_completo, value: current_user.nombre_usuario %>
+    </div>
 
-  <p>
-    <strong>Comentario: </strong>
-    <%= comment.comentario %>
-  </p>
-<% end %>
+    <%= f.submit 'Publicar comentario', class: 'estilo_btn2 btn-block' %>
+  <% end %>
+</div>
 
-
-<%= form_for([@post, @post.comments.build]) do |f| %>
-  <p>
-    <%= f.label :nombre_completo %><br>
-    <%= f.text_field :nombre_completo %>
-  </p>
-  <p>
-    <%= f.label :comentario %><br>
-    <%= f.text_area :comentario %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
