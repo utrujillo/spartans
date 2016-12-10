@@ -13,6 +13,18 @@
     <th>Veces leía</th>
     <td><%= @post.veces_leida %></td>
   </tr>
+  <% if @post.categories.present? %>
+    <tr>
+      <th>Categorias</th>
+      <td>
+       <ul>
+         <% @post.categories.each do |cat| %>
+           <li><%= cat.nombre_categoria %></li>
+         <% end %>
+       </ul>
+      </td>
+    </tr>
+  <% end %>
 </table>
 
 <div class="pull-left">
