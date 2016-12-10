@@ -31,6 +31,7 @@
       <%= f.label :category_tokens, "Categorias", class: "col-lg-3 col-md-4 col-sm-4 col-xs-6 control-label" %>
       <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6">
       <%= f.collection_select :category_ids, Category.all, :id,:nombre_categoria,{},{multiple:true, class: "form-control"} %>
+
       </div>
     </div>
 

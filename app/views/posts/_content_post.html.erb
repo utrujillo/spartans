@@ -2,69 +2,28 @@
 
 
 <div class="padding-15">
-	<h1 class="text-left wrap-overflow"></h1>
+	<h1 class="text-center"><%= @post.titulo%></h1>
 </div>
-<!-- Imagen -->
-<div class="post-image-area">
-	<img src="/images/image.png" class="image-post-complete grow">
-</div>
-&nbsp;
 <!-- Autor y fecha -->
 <div class="padding-15">
 	<i class="fa fa-user pull-left autor icon-align" aria-hidden="true"></i>
-  <span class="autor">Nombre usuario  </span>
-	<span class="nombre-autor"></span>
+  <span class="autor">Autor</span>
+	<span class="nombre-autor"><%= @post.user.nombre_usuario %></span>
+
 	<div class="pull-right">
     <i class="fa fa-calendar-o pull-left autor icon-align" aria-hidden="true"></i>
-		<span class="autor">Fecha:</span>
-		<span class="nombre-autor">2016-09-11</span>
+		<span class="autor">Publicado:</span>
+		<span class="nombre-autor"><%= time_ago_in_words(@post.created_at) %></span>
 	</div>
 	&nbsp;
 </div>
 <!-- Cuerpo -->
 <div class="padding-15">
-	<p class="text-justify">La situación de falta de seguridad en millones de dispositivos del internet de las cosas es tan grave que lanzar un ataque a gran escala con la posibilidad de paralizar medio internet no solo es posible, sino que podría haberse perpetrado por personas que no necesariamente tienen grandes conocimientos técnicos. Y no hay nada que podamos hacer.
-	</p>
+
+	<p class="text-justify">
+    <%=raw @post.contenido %>
+
 	</p>
 </div>
-<!-- Slider -->
-<div id="carousel-example-generic" class="carousel slide carousel-control-1 slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner slide-size">
-    <div class="item active slide-size">
-      <img src="/images/blue.png" alt="...">
-      <div class="carousel-caption">
-      	<h3>Spartans</h3>
-      </div>
-    </div>
-    <div class="item slide-size">
-      <img src="/images/blue.png" alt="...">
-      <div class="carousel-caption">
-      	<h3>Spartans</h3>
-      </div>
-    </div>
-    <div class="item slide-size">
-      <img src="/images/blue.png" alt="...">
-      <div class="carousel-caption">
-      	<h3>Spartans</h3>
-      </div>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#slideshow" role="button" data-slide="prev">
-    <span class="icon-prev" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#slideshow" role="button" data-slide="next">
-    <span class="icon-next" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+<%# render 'slider' %>

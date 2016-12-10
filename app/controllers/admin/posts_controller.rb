@@ -15,7 +15,6 @@ module Admin
 
     def create
       @post = Post.new(post_params)
-      @veces_leida = @post.veces_leida
       respond_to do |format|
       @post.veces_leida = 0
       binding.pry
