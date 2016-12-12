@@ -7,4 +7,6 @@ class Post < ActiveRecord::Base
   has_many :post_has_categories, :dependent => :destroy, :autosave => true , :inverse_of => :post
   has_many :categories, through: :post_has_categories
 
+  has_many :comments, dependent: :destroy
+
 end
