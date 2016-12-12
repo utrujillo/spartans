@@ -1,3 +1,4 @@
+
  <div class="blog-navbar">
     <ul class="topnav" id="responsive-mode-on">
         <img id="spartan-radio" src="/images/spartan_image.jpg"/>
@@ -12,10 +13,9 @@
           <div class="dropdown">
             <button type="submit" class="dropbtn">Categorias</button>
                <div class="dropdown-content">
-                  <a href="#">HTML</a>
-                  <a href="#">CSS</a>
-                  <a href="#">FRONT-END</a>
-                  <a href="#">BACK-END</a>
+               <% @categories.each do |item| %>
+               <a href="#"> <%= item.nombre_categoria %></a>
+               <% end %>
                </div>
           </div>
         </li>
@@ -30,4 +30,3 @@
         </li>
     </ul>
 </div>
-
