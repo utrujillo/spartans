@@ -5,7 +5,6 @@ class Category < ActiveRecord::Base
   has_many :post_has_categories, :dependent => :destroy, :autosave => true , :inverse_of => :category
   has_many :posts, through: :post_has_categories
 
-  accepts_nested_attributes_for :post_has_categories, :allow_destroy => true, :reject_if => :all_blank
 
 
 end

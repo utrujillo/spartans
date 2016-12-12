@@ -3,6 +3,4 @@ class PostHasCategory < ActiveRecord::Base
   belongs_to :category, :inverse_of => :post_has_categories
 
   validates_presence_of :post
-
-
 end

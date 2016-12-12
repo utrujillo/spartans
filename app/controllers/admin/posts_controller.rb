@@ -2,7 +2,7 @@ module Admin
   class PostsController < ApplicationController
     before_action :set_post, only: [:edit, :show, :update, :destroy]
     layout 'adminterface'
-    #before_filter :authenticate_user!
+    before_filter :authenticate_user!
 
     def index
       @posts= Post.all
@@ -53,7 +53,7 @@ module Admin
 
     private
       def post_params
-        params.require(:post).permit(:titulo,:contenido,:veces_leida,:user_id)
+        params.require(:post).permit(:titulo,:contenido,:veces_leida,:user_id, category_ids: [])
       end
 
       def set_post
