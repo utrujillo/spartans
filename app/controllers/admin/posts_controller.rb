@@ -2,7 +2,7 @@ module Admin
   class PostsController < ApplicationController
     before_action :set_post, only: [:edit, :show, :update, :destroy]
     layout 'adminterface'
-    #before_filter :authenticate_user!
+    before_filter :authenticate_user!
 
     def index
       @posts= Post.all
@@ -15,7 +15,6 @@ module Admin
 
     def create
       @post = Post.new(post_params)
-      @veces_leida = @post.veces_leida
       respond_to do |format|
       @post.veces_leida = 0
         if @post.save
@@ -27,7 +26,6 @@ module Admin
     end
 
     def update
-      binding.pry
       respond_to do |format|
         if @post.update(post_params)
           format.html { redirect_to [ "admin", @post ], notice: 'Se ha actualizado el post' }
@@ -55,11 +53,7 @@ module Admin
 
     private
       def post_params
-        params.require(:post).permit(
-                              :titulo,:contenido,:veces_leida,:user_id,
-                              post_has_categories_attributes:
-                                [ :post_id, :category_id ]
-                              )
+        params.require(:post).permit(:titulo,:contenido,:veces_leida,:user_id, category_ids: [])
       end
 
       def set_post

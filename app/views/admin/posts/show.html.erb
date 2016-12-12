@@ -13,16 +13,24 @@
     <th>Veces leía</th>
     <td><%= @post.veces_leida %></td>
   </tr>
-  <tr>
-    <th>Categorias</th>
-    <td><%= @post.categories.inspect %></td>
-  </tr>
+  <% if @post.categories.present? %>
+    <tr>
+      <th>Categorias</th>
+      <td>
+       <ul>
+         <% @post.categories.each do |cat| %>
+           <li><%= cat.nombre_categoria %></li>
+         <% end %>
+       </ul>
+      </td>
+    </tr>
+  <% end %>
 </table>
 
 <div class="pull-left">
   <%= link_to "Regresar", admin_posts_path, class: "btn btn-default"  %>
   <%= link_to "Editar", edit_admin_post_path(@post), class: "btn btn-success" %>
-  <%= link_to "Eliminar", admin_post_path(@post), method: :delete, data: { confirm: '¿Seguro de eliminar post?'}, class: "btn btn-success"%>
+  <%= link_to "Eliminar", admin_post_path(@post), method: :delete, data: { confirm: '¿Seguro de eliminar post?'}, class: "btn btn-danger"%>
   </div>
 <div class="clearfix"></div>
 
