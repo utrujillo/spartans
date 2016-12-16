@@ -1,7 +1,6 @@
-
- <div class="blog-navbar">
+<div class="blog-navbar">
     <ul class="topnav" id="responsive-mode-on">
-        <img id="spartan-radio" src="/images/spartan_image.jpg"/>
+        <%= link_to '<img id="spartan-radio" src="/images/spartan_image.jpg"/>'.html_safe, root_path %>
         <div class="tittle-blog">Spartans</div>
         <li>
           <div class="search-label">
@@ -12,11 +11,11 @@
         <li>
           <div class="dropdown">
             <button type="submit" class="dropbtn">Categorias</button>
-               <div class="dropdown-content">
-               <% @categories.each do |item| %>
-               <a href="#"> <%= item.nombre_categoria %></a>
-               <% end %>
-               </div>
+              <div class="dropdown-content">
+              <% @categories.each do |item| %>
+                <a href="#"> <%= item.nombre_categoria %></a>
+              <% end %>
+              </div>
           </div>
         </li>
         <li>
